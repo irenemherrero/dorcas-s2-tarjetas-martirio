@@ -1,0 +1,11 @@
+@mixin flex-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin normalize {
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
