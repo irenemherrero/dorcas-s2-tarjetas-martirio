@@ -49,11 +49,16 @@ $font-size-xl-plus:     22px;
 .medium { font-weight: $semibold; }
 
 .uppercase { text-transform: uppercase; }
-<<<<<<< HEAD
-*/.allboxes {
-  width: 100vh;
+*/.header-img {
+  width: 201px;
+  height: 51px;
+}
+
+.allboxes {
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #f5f5f5;
 }
 
 .landingbox {
@@ -70,16 +75,24 @@ $font-size-xl-plus:     22px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 94px;
 }
 
 .logo {
+  margin-top: 94px;
   margin-bottom: 36px;
+  width: 250px;
+  height: 64px;
 }
 
 .maintitle {
   font-size: 18px;
   color: #e17334;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.parraph1 {
+  font-size: 12px;
   margin-bottom: 14px;
 }
 
@@ -98,17 +111,16 @@ $font-size-xl-plus:     22px;
   height: 70px;
 }
 
-.botoncomenzar {
+.startbutt {
   width: 129px;
   height: 42px;
   text-align: center;
   background-color: #438792;
+  color: white;
   border-radius: 20px;
-
-*/.header-img {
-  width: 201px;
-  height: 51px;
->>>>>>> 52d6c54020c438c7b923603ae0e4af154245c60b
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

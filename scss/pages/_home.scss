@@ -1,27 +1,35 @@
 .allboxes{
-width: 100vh;
+width: 320px;
 margin-left: auto;
 margin-right: auto;
-
+background-color: #f5f5f5;
 }
+
 .landingbox {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 94px;
+
 }
+
 .logo{
+  margin-top: 94px;
   margin-bottom: 36px;
+  width: 250px;
+  height: 64px;
 }
 
 .maintitle{
-  font-size: $font-size-l;
+font-size: $font-size-l;
 color: $color-primary;
-margin-bottom: 14px;
+margin-bottom: 4px;
+margin-top: 0;
 }
+
 .parraph1{
-// font-size: VARIABLE
+font-size: 12px;
+margin-bottom: 14px;
 }
 .iconbox{
 display: flex;
@@ -31,14 +39,20 @@ border: 1px solid orange;
 width: 268px;
 height: 70px;
 }
+
 .minibox1{
 
 }
-.botoncomenzar {
+
+.startbutt {
 width: 129px;
 height: 42px;
 text-align: center;
 background-color: #438792;
+color: white;
 border-radius: 20px;
-// text-decoration: none;
+text-decoration: none;
+margin-top: 40px;
+margin-bottom: 30px;
+
 }
