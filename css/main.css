@@ -49,6 +49,7 @@ $font-size-xl-plus:     22px;
 .medium { font-weight: $semibold; }
 
 .uppercase { text-transform: uppercase; }
+<<<<<<< HEAD
 */.allboxes {
   width: 100vh;
   margin-left: auto;
@@ -103,6 +104,11 @@ $font-size-xl-plus:     22px;
   text-align: center;
   background-color: #438792;
   border-radius: 20px;
+
+*/.header-img {
+  width: 201px;
+  height: 51px;
+>>>>>>> 52d6c54020c438c7b923603ae0e4af154245c60b
 }
 
 /*# sourceMappingURL=main.css.map */

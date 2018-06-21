@@ -1,4 +1,6 @@
 @import 'core/variables';
 @import 'core/mixins';
 @import 'components/typography';
-@import 'pages/home';
+@import "layout/footer";
+@import "layout/header-generator";
+@import "pages/home";
