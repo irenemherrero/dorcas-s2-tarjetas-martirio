@@ -49,6 +49,9 @@ $font-size-xl-plus:     22px;
 .medium { font-weight: $semibold; }
 
 .uppercase { text-transform: uppercase; }
-*/
+*/.header-img {
+  width: 201px;
+  height: 51px;
+}
 
 /*# sourceMappingURL=main.css.map */
