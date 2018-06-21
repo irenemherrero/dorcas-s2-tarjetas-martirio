@@ -1,0 +1,44 @@
+.allboxes{
+width: 100vh;
+margin-left: auto;
+margin-right: auto;
+
+}
+.landingbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 94px;
+}
+.logo{
+  margin-bottom: 36px;
+}
+
+.maintitle{
+  font-size: $font-size-l;
+color: $color-primary;
+margin-bottom: 14px;
+}
+.parraph1{
+// font-size: VARIABLE
+}
+.iconbox{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid orange;
+width: 268px;
+height: 70px;
+}
+.minibox1{
+
+}
+.botoncomenzar {
+width: 129px;
+height: 42px;
+text-align: center;
+background-color: #438792;
+border-radius: 20px;
+// text-decoration: none;
+}
