@@ -1,0 +1,26 @@
+.no_link_decoration {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-family-primary;
+  font-size: $font-size-m;
+}
+
+.footer__copiright {
+  color: $color-light-dark;
+  margin: 20px auto 10px;
+}
+
+.footer__link-img-adalab {
+  width: 103px;
+  margin-bottom: 20px;
+}
+.footer__img-adalab {
+  width: 103px;
+  margin-bottom: 20px;
+}
