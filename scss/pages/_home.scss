@@ -30,24 +30,59 @@ margin-top: 0;
 .parraph1{
 font-size: 12px;
 margin-bottom: 14px;
+color: #114e4e;
 }
+
 .iconbox{
 display: flex;
 justify-content: center;
 align-items: center;
-border: 1px solid orange;
+border: 1px solid rgba(225, 115, 52, 0.5);
 width: 268px;
-height: 70px;
+height: 83px;
+
 }
 
 .minibox1{
-
+  color: #e17334;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  height: 60px;
+  margin-top: 15px;
 }
+
+.minibox2{
+  color: #e17334;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+.minibox3{
+  color: #e17334;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  height: 60px;
+  margin-top: 15px;
+}
+
 
 .startbutt {
 width: 129px;
 height: 42px;
-text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 background-color: #438792;
 color: white;
 border-radius: 20px;
