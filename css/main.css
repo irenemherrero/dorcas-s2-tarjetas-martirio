@@ -49,9 +49,50 @@ $font-size-xl-plus:     22px;
 .medium { font-weight: $semibold; }
 
 .uppercase { text-transform: uppercase; }
-*/.header-img {
+*/.no_link_decoration {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.footer__copiright {
+  color: #6b6b6b;
+  margin: 20px auto 10px;
+}
+
+.footer__link-img-adalab {
+  width: 103px;
+  margin-bottom: 20px;
+}
+
+.footer__img-adalab {
+  width: 103px;
+  margin-bottom: 20px;
+}
+
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40px;
+}
+
+.header__img {
   width: 201px;
-  height: 51px;
 }
 
 .allboxes {
