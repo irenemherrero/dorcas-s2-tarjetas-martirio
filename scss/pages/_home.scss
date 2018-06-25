@@ -1,8 +1,8 @@
 .allboxes{
-width: 320px;
-margin-left: auto;
-margin-right: auto;
-background-color: #f5f5f5;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f5f5;
 }
 
 .landingbox {
@@ -21,25 +21,32 @@ background-color: #f5f5f5;
 }
 
 .maintitle{
-font-size: $font-size-l;
-color: $color-primary;
-margin-bottom: 4px;
-margin-top: 0;
+  font-size: $font-size-l;
+  color: $color-primary;
+  font-family: "Merriweather", serif;
+  margin-bottom: 4px;
+  margin-top: 0;
 }
 
 .parraph1{
-font-size: 12px;
-margin-bottom: 14px;
-color: #114e4e;
+  font-family: "OpenSans", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 12px;
+  margin-bottom: 14px;
+  color: #114e4e;
 }
 
 .iconbox{
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid rgba(225, 115, 52, 0.5);
-width: 268px;
-height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(225, 115, 52, 0.5);
+  width: 268px;
+  height: 83px;
 
 }
 
@@ -49,8 +56,8 @@ height: 83px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
 }
 
@@ -60,8 +67,8 @@ height: 83px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
 }
 
@@ -71,23 +78,29 @@ height: 83px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
+}
+
+.minitext {
+  text-decoration-color: none;
+  color: #54585a;
+  font-size: 16px;
 }
 
 
 .startbutt {
-width: 129px;
-height: 42px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #438792;
-color: white;
-border-radius: 20px;
-text-decoration: none;
-margin-top: 40px;
-margin-bottom: 30px;
+  width: 129px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #438792;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
 
 }
