@@ -5,13 +5,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Martirio</title>
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:900|Open+Sans:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 		<header>
 			<a href="#" class="header__link" alt="Logo awesome"> <img class="header__img" src="../images/awesome.svg" alt=""> </a>
 		</header>
-
+		<form class="form" action="">
+			<fieldset class="form__fill">
+				<div class="contenedor-icono">
+					<i class="far fa-keyboard"></i>
+					<h1 class="form__title">Rellena</h1>
+				</div>
+				<div class="form__container">
+						<label class="form__label" for="nombre">Nombre completo</label>
+						<input class="form__input" id="nombre" type="text" name="nombre" placeholder="Ej. Juanita Reina">
+						<label class="form__label" for="puesto">Puesto</label>
+						<input class="form__input" id="puesto" type="text" name="puesto" placeholder="Ej. Reina de la canción">
+						<label class="form__label">Imagen de perfil</label>
+					<div class="form__container--imagen">
+						<a class="boton__añadir-imagen" href="#">Añadir imagen</a>
+						<div class="contenedor--imagen"></div>
+					</div>
+						<label class="form__label" for="email">Email</label>
+						<input class="form__input" id="email" type="mail" name="email" placeholder="Ej. reinadelacopla@ole.es">
+						<label class="form__label" for="telefono">Teléfono</label>
+						<input class="form__input" id="telefono" type="text" name="telefono" placeholder="Ej. 982938437">
+						<label class="form__label" for="linkedin">Linkedin</label>
+						<input class="form__input" id="linkedin" type="text" name="linkedin" placeholder="Ej. linkedin.com/in/juanita.reina">
+						<label class="form__label" for="github">Github</label>
+						<input class="form__input" id="github" type="text" name="github" placeholder="Ej. @juanita-reina">
+					<div class="form__container--habilidades">
+						<label class="form__label" for="habilidades">Habilidades (máximo 3)</label>
+						<div class="form__container--habilidad">
+						<select class="form__select" id="habilidades1" name="habilidades1">
+							<option>HTML</option>
+							<option>CSS</option>
+							<option>SASS</option>
+							<option>JS</option>
+						</select>
+						<div class="boton--sumar-restar"><i class="icono--signo fas fa-minus"></i></div>
+						</div>
+						<div class="form__container--habilidad">
+							<select class="form__select" id="habilidades2" name="habilidades2">
+								<option>HTML</option>
+								<option>CSS</option>
+								<option>SASS</option>
+								<option>JS</option>
+							</select>
+							<div class="boton--sumar-restar"><i class="icono--signo fas fa-plus"></i></div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
 		<footer class="footer">
 			<a class="no_link_decoration footer__copiright" href="#">
 				Tarjetas Martirio© 2018
