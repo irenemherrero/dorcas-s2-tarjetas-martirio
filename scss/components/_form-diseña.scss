@@ -7,16 +7,17 @@ body {
 
 //position
 
-.form{
-    height: 346px;
-}
 .container__title_arrow {
     display: flex;
     justify-content: space-between;
 
 }
-.form__title{
-    margin-left: -286px;
+.form__title1{
+    margin-left: -261px;
+    font-family: $font-family-primary;
+    font-weight: $semibold;
+    font-size: $font-size-l;
+    color: $color-middark;
 }
 .container__input__labels{
     width: 175px;
@@ -145,12 +146,12 @@ body {
 }
 
 //icons
-.fa-object-ungroup{
+.rectangle{
     width: 21px;
     height: 18px;
     color: $color-primary;
 }
-.fas  {
+.arrow  {
     width: 16px;
     height: 18px;
 }

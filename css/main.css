@@ -6,6 +6,13 @@ $font-size-xxl-plus:    px;
 $font-size-xxl:         24px;
 $font-size-xl-plus:     22px;
 *//*
+$font-size-super-xl:    px;
+$font-size-super:       px;
+$font-size-su:          px;
+$font-size-xxl-plus:    px;
+$font-size-xxl:         24px;
+$font-size-xl-plus:     22px;
+*//*
 
 .txt-md {
   font-size: 16px;
@@ -49,15 +56,10 @@ $font-size-xl-plus:     22px;
 .medium { font-weight: $semibold; }
 
 .uppercase { text-transform: uppercase; }
-<<<<<<< HEAD
 */body {
   margin: 0;
   padding: 0;
   width: 100vh;
-}
-
-.form {
-  height: 346px;
 }
 
 .container__title_arrow {
@@ -69,8 +71,12 @@ $font-size-xl-plus:     22px;
   justify-content: space-between;
 }
 
-.form__title {
-  margin-left: -286px;
+.form__title1 {
+  margin-left: -261px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #54585a;
 }
 
 .container__input__labels {
@@ -214,17 +220,18 @@ $font-size-xl-plus:     22px;
   background-color: #a0c0cf;
 }
 
-.fa-object-ungroup {
+.rectangle {
   width: 21px;
   height: 18px;
   color: #e17334;
 }
 
-.fas {
+.arrow {
   width: 16px;
   height: 18px;
-=======
-*/.no_link_decoration {
+}
+
+.no_link_decoration {
   text-decoration: none;
   color: black;
 }
@@ -451,11 +458,18 @@ $font-size-xl-plus:     22px;
 .maintitle {
   font-size: 18px;
   color: #e17334;
+  font-family: "Merriweather", serif;
   margin-bottom: 4px;
   margin-top: 0;
 }
 
 .parraph1 {
+  font-family: "OpenSans", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   font-size: 12px;
   margin-bottom: 14px;
   color: #114e4e;
@@ -491,8 +505,8 @@ $font-size-xl-plus:     22px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
 }
 
@@ -511,8 +525,8 @@ $font-size-xl-plus:     22px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
 }
 
@@ -531,9 +545,16 @@ $font-size-xl-plus:     22px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
+}
+
+.minitext {
+  -webkit-text-decoration-color: none;
+  text-decoration-color: none;
+  color: #54585a;
+  font-size: 16px;
 }
 
 .startbutt {
@@ -554,7 +575,6 @@ $font-size-xl-plus:     22px;
   text-decoration: none;
   margin-top: 40px;
   margin-bottom: 30px;
->>>>>>> f5e5007ca587c8495140c13bdb501ff9cadca7fd
 }
 
 /*# sourceMappingURL=main.css.map */
