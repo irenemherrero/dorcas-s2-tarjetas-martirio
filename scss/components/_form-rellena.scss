@@ -1,0 +1,115 @@
+.form__fill{
+    border:0;
+    padding:20px;
+    margin: 0;
+}
+.fa-keyboard{
+    color: $color-primary;
+    align-self: center;
+    margin-right:10px;
+}
+.form__title{
+    font-family: $font-family-primary;
+    font-weight: $semibold;
+    font-size: $font-size-l;
+    color: $color-middark;
+    text-transform: uppercase;
+    display:inline-block;
+}
+
+.contenedor-icono{
+    display: flex;
+    flex-direction: row;
+}
+.form__container{
+    display: flex;
+    flex-direction: column;
+}
+.form__label{
+    font-family: $font-family-primary;
+    font-weight: $normal;
+    font-size: $font-size-m;
+    color: $color-secondary;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.form__input{
+    border-color: $color-secondary-lighter;
+    border-style: solid;
+    border-width: 1px;
+    color: $color-midtonedark;
+    height: 30px;
+    padding-left: 10px;
+    font-size: $font-size-m;
+    opacity: 0.5;
+    font-family: $font-family-primary;
+    font-size: $font-size-m;
+}
+.form__container--imagen{
+    display: flex;
+}
+
+.boton__añadir-imagen{
+    background-color: $color-primary;
+    color: $color-ligthtone;
+    text-decoration: none;
+    font-family: $font-family-primary;
+    font-weight: $normal;
+    font-size: $font-size-m;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
+.contenedor--imagen{
+    border-color: $color-secondary-lighter;
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.form__container--habilidades{
+padding-top: 40px;
+}
+.form__container--habilidad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form__select{
+    border-color: $color-secondary-lighter;
+    border-style: solid;
+    border-width: 1px;
+    color: $color-midtonedark;
+    width: 165px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $color-ligthtone;
+    color: $color-darktone;
+    font-family: $font-family-primary;
+    font-size: $font-size-m;
+}
+.boton--sumar-restar{
+    height: 30px;
+    width: 30px;
+    border: 2px solid $color-primary;
+    border-radius:50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+.icono--signo{
+    color: $color-primary;
+    left:50%;
+    top:50%;
+    position:absolute;
+    transform:translate(-50%, -50%);
+}

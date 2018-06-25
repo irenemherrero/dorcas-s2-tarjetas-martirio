@@ -9,76 +9,135 @@
 	<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-
-	<!-- diseña - MariaV -->
+		<header>
+			<a href="#" class="header__link" alt="Logo awesome"> <img class="header__img" src="../images/awesome.svg" alt=""> </a>
+		</header>
+			<!-- diseña - MariaV -->
 	<form class="form" action="/signup" method="post">
-			<fieldset class="form__desing">
-				<div class="container__title_arrow">
-						<i class="far fa-object-ungroup"></i>
-				<legend class="form__title">DISEÑA</legend>
-				<div class="arrowup">
-					<i class="fas fa-angle-up"></i>
-				</div>
+		<fieldset class="form__desing">
+			<div class="container__title_arrow">
+					<i class="far fa-object-ungroup"></i>
+			<legend class="form__title">DISEÑA</legend>
+			<div class="arrowup">
+				<i class="fas fa-angle-up"></i>
 			</div>
-					<fieldset class="fieldset-colors">
-							<div class="position-colors2">
-						<legend class="form__subtitle">COLORES</legend>
-						 <div class="container__input__labels">
-							<label for="form__subtitle__first-color">
-								<input id="form__subtitle__first-color" type="radio" value="colopOptions" name="colopOptions" />
-								<div class="container">
-									<div class="first-color__square1"></div>
-									<div class="first-color__square2"></div>
-									<div class="first-color__square3"></div>
-							    </div> 
-							</label>
-							<label for="form__subtitle__second-color">
-								<input id="form__subtitle__second-color" type="radio" value="colopOptions" name="colopOptions" />
-									<div class="container">
-										<div class="second-color__square1"></div>
-										<div class="second-color__square2"></div>
-										<div class="second-color__square3"></div>
-									</div>
-							</label>
-							<label for="form__subtitle__third-color">
-								<input id="form__subtitle__third-color" type="radio" value="colopOptions" name="colopOptions" />
-								<div class="container">
-									<div class="third-color__square1"></div>
-									<div class="third-color__square2"></div>
-									<div class="third-color__square3"></div>
-								</div>	
-							</label>
-						</div>
-							</div>
-						</fieldset>
-				    
-			   
-					<fieldset class="fieldset-font">
+		</div>
+				<fieldset class="fieldset-colors">
 						<div class="position-colors2">
-							<legend class="form__subtitle">FUENTES</legend>
-								<div class="container__input__labels">
-									<label class="font1" for="form__subtitle__first-font">
-										<input id="form__subtitle__firt-font" type="radio" value="chooseseat" name="colopOptions" />
-										<div class="container2">
-										Ubuntu		
-										</div>
-									</label>
-									<label class="font2" for="form__subtitle__second-font">
-										<input id="form__subtitle__second-font" type="radio" value="chooseseat" name="colopOptions" />
-										<div class="container2">
-										Comic Sans
-										</div>
-									</label>
-									<label class="font3" for="form__subtitle__third-font"><input id="form__subtitle__third-font" type="radio" value="chooseseat" name="colopOptions" />
-										<div class="container2">Montserrat
-										</div>
-									</label>
+					<legend class="form__subtitle">COLORES</legend>
+					 <div class="container__input__labels">
+						<label for="form__subtitle__first-color">
+							<input id="form__subtitle__first-color" type="radio" value="colopOptions" name="colopOptions" />
+							<div class="container">
+								<div class="first-color__square1"></div>
+								<div class="first-color__square2"></div>
+								<div class="first-color__square3"></div>
+							</div> 
+						</label>
+						<label for="form__subtitle__second-color">
+							<input id="form__subtitle__second-color" type="radio" value="colopOptions" name="colopOptions" />
+								<div class="container">
+									<div class="second-color__square1"></div>
+									<div class="second-color__square2"></div>
+									<div class="second-color__square3"></div>
 								</div>
+						</label>
+						<label for="form__subtitle__third-color">
+							<input id="form__subtitle__third-color" type="radio" value="colopOptions" name="colopOptions" />
+							<div class="container">
+								<div class="third-color__square1"></div>
+								<div class="third-color__square2"></div>
+								<div class="third-color__square3"></div>
+							</div>	
+						</label>
+					</div>
 						</div>
 					</fieldset>
-	      
+				
+		   
+				<fieldset class="fieldset-font">
+					<div class="position-colors2">
+						<legend class="form__subtitle">FUENTES</legend>
+							<div class="container__input__labels">
+								<label class="font1" for="form__subtitle__first-font">
+									<input id="form__subtitle__firt-font" type="radio" value="chooseseat" name="colopOptions" />
+									<div class="container2">
+									Ubuntu		
+									</div>
+								</label>
+								<label class="font2" for="form__subtitle__second-font">
+									<input id="form__subtitle__second-font" type="radio" value="chooseseat" name="colopOptions" />
+									<div class="container2">
+									Comic Sans
+									</div>
+								</label>
+								<label class="font3" for="form__subtitle__third-font"><input id="form__subtitle__third-font" type="radio" value="chooseseat" name="colopOptions" />
+									<div class="container2">Montserrat
+									</div>
+								</label>
+							</div>
+					</div>
 				</fieldset>
-	</form>
+	  
+			</fieldset>
+</form>
+<!-- rellena - Irene -->
+		<form class="form" action="">
+			<fieldset class="form__fill">
+				<div class="contenedor-icono">
+					<i class="far fa-keyboard"></i>
+					<h1 class="form__title">Rellena</h1>
+				</div>
+				<div class="form__container">
+						<label class="form__label" for="nombre">Nombre completo</label>
+						<input class="form__input" id="nombre" type="text" name="nombre" placeholder="Ej. Juanita Reina">
+						<label class="form__label" for="puesto">Puesto</label>
+						<input class="form__input" id="puesto" type="text" name="puesto" placeholder="Ej. Reina de la canción">
+						<label class="form__label">Imagen de perfil</label>
+					<div class="form__container--imagen">
+						<a class="boton__añadir-imagen" href="#">Añadir imagen</a>
+						<div class="contenedor--imagen"></div>
+					</div>
+						<label class="form__label" for="email">Email</label>
+						<input class="form__input" id="email" type="mail" name="email" placeholder="Ej. reinadelacopla@ole.es">
+						<label class="form__label" for="telefono">Teléfono</label>
+						<input class="form__input" id="telefono" type="text" name="telefono" placeholder="Ej. 982938437">
+						<label class="form__label" for="linkedin">Linkedin</label>
+						<input class="form__input" id="linkedin" type="text" name="linkedin" placeholder="Ej. linkedin.com/in/juanita.reina">
+						<label class="form__label" for="github">Github</label>
+						<input class="form__input" id="github" type="text" name="github" placeholder="Ej. @juanita-reina">
+					<div class="form__container--habilidades">
+						<label class="form__label" for="habilidades">Habilidades (máximo 3)</label>
+						<div class="form__container--habilidad">
+						<select class="form__select" id="habilidades1" name="habilidades1">
+							<option>HTML</option>
+							<option>CSS</option>
+							<option>SASS</option>
+							<option>JS</option>
+						</select>
+						<div class="boton--sumar-restar"><i class="icono--signo fas fa-minus"></i></div>
+						</div>
+						<div class="form__container--habilidad">
+							<select class="form__select" id="habilidades2" name="habilidades2">
+								<option>HTML</option>
+								<option>CSS</option>
+								<option>SASS</option>
+								<option>JS</option>
+							</select>
+							<div class="boton--sumar-restar"><i class="icono--signo fas fa-plus"></i></div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<footer class="footer">
+			<a class="no_link_decoration footer__copiright" href="#">
+				Tarjetas Martirio© 2018
+			</a>
+			<a class="footer__link-img-adalab" href="#">
+				<img class="footer__img-adalab" src="../images/logo-adalab.png" alt="Logo adalab">
+			</a>
+		</footer>
 	<script src="js/main.min.js"></script>
 </body>
 </html>
