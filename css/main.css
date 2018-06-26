@@ -56,13 +56,7 @@ $font-size-xl-plus:     22px;
 .medium { font-weight: $semibold; }
 
 .uppercase { text-transform: uppercase; }
-*/body {
-  margin: 0;
-  padding: 0;
-  width: 100vh;
-}
-
-.rectangle {
+*/.rectangle {
   width: 21px;
   height: 18px;
   color: #e17334;
@@ -82,10 +76,6 @@ $font-size-xl-plus:     22px;
   justify-content: space-between;
 }
 
-.form__title-principal {
-  margin-left: -261px;
-}
-
 .form__subtitle {
   margin-right: 50px;
 }
@@ -97,10 +87,6 @@ $font-size-xl-plus:     22px;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-}
-
-.container__input__labels {
-  width: 175px;
 }
 
 .container__input__labels > * {
@@ -129,6 +115,8 @@ $font-size-xl-plus:     22px;
 
 .form__desing {
   border-width: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .fieldset-colors {
@@ -138,10 +126,11 @@ $font-size-xl-plus:     22px;
 
 .fieldset-font {
   border-width: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .form__title-principal {
-  margin-left: -261px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -249,7 +238,6 @@ $font-size-xl-plus:     22px;
 
 .footer__copiright {
   color: #6b6b6b;
-  margin: 20px auto 10px;
 }
 
 .footer__link-img-adalab {
@@ -280,7 +268,8 @@ body {
 
 .form__fill {
   border: 0;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
   margin: 0;
 }
 
