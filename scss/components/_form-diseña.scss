@@ -1,0 +1,161 @@
+//form-diseña-Maria
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+}
+
+//icons
+.rectangle{
+    width: 21px;
+    height: 18px;
+    color: $color-primary;
+}
+.arrow  {
+    width: 16px;
+    height: 18px;
+}
+
+//position
+
+.container__rectangle_title_arrow{
+    display: flex;
+    justify-content: space-between;
+
+}
+.form__title-principal{
+    margin-left: -261px;
+}
+.form__subtitle {
+    margin-right: 50px;
+}
+.container-legend-label-input{
+    display: flex;
+    align-items: baseline;
+   
+   
+}
+.container__input__labels{
+    width: 175px;
+    
+    
+}
+
+.container__input__labels > *{
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  align-items: center;
+    
+}
+
+.container__square{
+  display: flex;
+  margin-left: 10px;
+}
+.container__font {
+    margin-left: 10px;
+}
+
+//borders
+.form__desing{
+    border-width: 0;
+}
+.fieldset-colors {
+    border-width: 0;
+    width: 100%;
+
+}
+
+.fieldset-font{
+    border-width: 0;
+}
+
+
+//typo
+
+.form__title-principal{
+    margin-left: -261px;
+    font-family: $font-family-primary;
+    font-weight: $semibold;
+    font-size: $font-size-l;
+    color: $color-middark;
+}
+.form__subtitle{
+    font-family: $font-family-primary;
+    font-weight: $normal;
+    font-size: $font-size-m;
+}
+.font1{
+    margin-right: 10px;
+    font-family: $font-family-primary;
+    font-weight: $semibold;
+    font-size: $font-size-m-plus;
+
+}
+
+.font2{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: $normal;
+    font-size: $font-size-m-plus;
+
+}
+
+.font3{
+    font-family: $font-family-secundary;
+    font-weight: $normal;
+    font-size: $font-size-m-plus;
+}
+// colors
+
+//first-color
+.first-color__square1 {
+    height: 25px;
+    width: 30px;
+    background-color: $color-secondary;
+}
+.first-color__square2 {
+    height: 25px;
+    width: 30px;
+    background-color: $color-secondary-light;
+}
+.first-color__square3 {
+    height: 25px;
+    width: 30px;
+    background-color: $color-secondary-lighter;
+}
+//second-color
+.second-color__square1 {
+    height: 25px;
+    width: 30px;
+    background-color: $color-red-blood
+}
+.second-color__square2 {
+    height: 25px;
+    width: 30px;
+    background-color: $color-red-bright;
+}
+.second-color__square3 {
+    height: 25px;
+    width: 30px;
+    background-color: $color-red-sunset
+}
+//third-color
+.third-color__square1 {
+    height: 25px;
+    width: 30px;
+    background-color:$color-San-Juan
+}
+.third-color__square2 {
+    height: 25px;
+    width: 30px;
+    background-color:$color-solitude;
+}
+.third-color__square3 {
+    height: 25px;
+    width: 30px;
+    background-color: $color-regent;
+}
+
+
+
