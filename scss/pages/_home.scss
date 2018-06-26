@@ -1,8 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
 .allboxes{
-  width: 320px;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f5f5f5;
+  background-color: $color-background;
 }
 
 .landingbox {
@@ -10,6 +18,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 0 28px;
 
 }
 
@@ -23,73 +32,56 @@
 .maintitle{
   font-size: $font-size-l;
   color: $color-primary;
-  font-family: "Merriweather", serif;
+  font-family: $font-family-secundary;
   margin-bottom: 4px;
   margin-top: 0;
 }
 
 .parraph1{
-  font-family: "OpenSans-Regular", serif;
+  font-family: $font-family-primary;
   font-weight: normal;
+  text-align: center;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom: 14px;
-  color: #114e4e;
+
+  color: $color-secondary;
 }
 
 .iconbox{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items:center;
   border: 1px solid rgba(225, 115, 52, 0.5);
   width: 268px;
-  height: 83px;
+  height: 78px;
+  border-radius: 4px;
+  padding: 15px 20px 10px 20px;
 
 }
 
-.minibox1{
-  color: #e17334;
+.minibox{
+  color: $color-primary;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "OpenSans-Regular", serif;
+  font-family: $font-family-primary;
   flex-direction: column;
   width: 60px;
   height: 48px;
-  margin-top: 15px;
+  font-size: 26px;
 }
 
-.minibox2{
-  color: #e17334;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "OpenSans-Regular", serif;
-  width: 60px;
-  height: 48px;
-  margin-top: 15px;
-}
 
-.minibox3{
-  color: #e17334;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "OpenSans-Regular", serif;
-  width: 60px;
-  height: 48px;
-  margin-top: 15px;
-}
 
 .minitext {
   text-decoration-color: none;
-  color: #54585a;
-  font-size: 16px;
+  color: $color-middark;
+  font-size: 14px;
+  margin: 0;
 }
 
 
@@ -99,10 +91,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #438792;
+  background-color: $color-secondary-light;
   color: white;
   border-radius: 20px;
-  font-family: "OpenSans-SemiBold", sans-serif;
+  font-family: $font-family-primary;
+  font-weight: $semibold;
   text-decoration: none;
   margin-top: 40px;
   margin-bottom: 30px;
