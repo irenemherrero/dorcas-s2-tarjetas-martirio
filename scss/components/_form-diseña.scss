@@ -5,23 +5,39 @@ body {
     width: 100vh;
 }
 
+//icons
+.rectangle{
+    width: 21px;
+    height: 18px;
+    color: $color-primary;
+}
+.arrow  {
+    width: 16px;
+    height: 18px;
+}
+
 //position
 
-.container__title_arrow {
+.container__rectangle_title_arrow{
     display: flex;
     justify-content: space-between;
 
 }
-.form__title1{
+.form__title-principal{
     margin-left: -261px;
-    font-family: $font-family-primary;
-    font-weight: $semibold;
-    font-size: $font-size-l;
-    color: $color-middark;
+}
+.form__subtitle {
+    margin-right: 50px;
+}
+.container-legend-label-input{
+    display: flex;
+    align-items: baseline;
+   
+   
 }
 .container__input__labels{
     width: 175px;
-    height: 227px;
+    
     
 }
 
@@ -33,22 +49,15 @@ body {
     
 }
 
-.container {
+.container__square{
   display: flex;
   margin-left: 10px;
 }
-.container2 {
+.container__font {
     margin-left: 10px;
 }
-.form__subtitle {
-    margin-right: 50px;
-}
-.position-colors2{
-    display: flex;
-    align-items: baseline;
-    height: 227px;
-   
-}
+
+//borders
 .form__desing{
     border-width: 0;
 }
@@ -64,15 +73,18 @@ body {
 
 
 //typo
+
+.form__title-principal{
+    margin-left: -261px;
+    font-family: $font-family-primary;
+    font-weight: $semibold;
+    font-size: $font-size-l;
+    color: $color-middark;
+}
 .form__subtitle{
     font-family: $font-family-primary;
     font-weight: $normal;
     font-size: $font-size-m;
-}
-.form__title {
-    font-family: $font-family-primary;
-    font-weight: $semibold;
-    font-size: $font-size-l;
 }
 .font1{
     margin-right: 10px;
@@ -145,14 +157,5 @@ body {
     background-color: $color-regent;
 }
 
-//icons
-.rectangle{
-    width: 21px;
-    height: 18px;
-    color: $color-primary;
-}
-.arrow  {
-    width: 16px;
-    height: 18px;
-}
+
 

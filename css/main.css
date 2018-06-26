@@ -62,7 +62,18 @@ $font-size-xl-plus:     22px;
   width: 100vh;
 }
 
-.container__title_arrow {
+.rectangle {
+  width: 21px;
+  height: 18px;
+  color: #e17334;
+}
+
+.arrow {
+  width: 16px;
+  height: 18px;
+}
+
+.container__rectangle_title_arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,17 +82,25 @@ $font-size-xl-plus:     22px;
   justify-content: space-between;
 }
 
-.form__title1 {
+.form__title-principal {
   margin-left: -261px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: #54585a;
+}
+
+.form__subtitle {
+  margin-right: 50px;
+}
+
+.container-legend-label-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .container__input__labels {
   width: 175px;
-  height: 227px;
 }
 
 .container__input__labels > * {
@@ -97,29 +116,15 @@ $font-size-xl-plus:     22px;
   align-items: center;
 }
 
-.container {
+.container__square {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
 }
 
-.container2 {
+.container__font {
   margin-left: 10px;
-}
-
-.form__subtitle {
-  margin-right: 50px;
-}
-
-.position-colors2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  height: 227px;
 }
 
 .form__desing {
@@ -135,16 +140,18 @@ $font-size-xl-plus:     22px;
   border-width: 0;
 }
 
+.form__title-principal {
+  margin-left: -261px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #54585a;
+}
+
 .form__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-}
-
-.form__title {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
 }
 
 .font1 {
@@ -218,17 +225,6 @@ $font-size-xl-plus:     22px;
   height: 25px;
   width: 30px;
   background-color: #a0c0cf;
-}
-
-.rectangle {
-  width: 21px;
-  height: 18px;
-  color: #e17334;
-}
-
-.arrow {
-  width: 16px;
-  height: 18px;
 }
 
 .no_link_decoration {
