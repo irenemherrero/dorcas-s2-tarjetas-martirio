@@ -276,11 +276,18 @@ $font-size-xl-plus:     22px;
 .maintitle {
   font-size: 18px;
   color: #e17334;
+  font-family: "Merriweather", serif;
   margin-bottom: 4px;
   margin-top: 0;
 }
 
 .parraph1 {
+  font-family: "OpenSans", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   font-size: 12px;
   margin-bottom: 14px;
   color: #114e4e;
@@ -316,8 +323,8 @@ $font-size-xl-plus:     22px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
 }
 
@@ -336,8 +343,8 @@ $font-size-xl-plus:     22px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
 }
 
@@ -356,9 +363,16 @@ $font-size-xl-plus:     22px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 48px;
   margin-top: 15px;
+}
+
+.minitext {
+  -webkit-text-decoration-color: none;
+  text-decoration-color: none;
+  color: #54585a;
+  font-size: 16px;
 }
 
 .startbutt {
