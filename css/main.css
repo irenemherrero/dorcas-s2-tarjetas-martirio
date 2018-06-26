@@ -272,13 +272,19 @@ $font-size-xl-plus:     22px;
   width: 201px;
 }
 
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .form__fill {
   border: 0;
   padding: 20px;
   margin: 0;
 }
 
-.fa-keyboard {
+.icono-teclado {
   color: #e17334;
   -ms-flex-item-align: center;
   align-self: center;
@@ -549,6 +555,7 @@ body {
   margin-bottom: 30px;
 }
 
+
 @media all and (min-width: 768px) {
   .logo {
     margin-top: 94px;
@@ -556,6 +563,15 @@ body {
     width: 410px;
     height: 107px;
   }
+}
+
+.preview-container {
+  border: 0;
+  width: 100%;
+  height: 457px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
+  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+
 }
 
 /*# sourceMappingURL=main.css.map */
