@@ -7,17 +7,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  margin: 0 auto;
   font-family: $font-family-primary;
   font-size: $font-size-m;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__copiright {
   color: $color-light-dark;
-  margin: 20px auto 10px;
+  margin: 20px 10px;
+
+  @media all and (min-width: 768px) {
+    margin: 20px 0 20px 41px;
+  }
 }
 
 .footer__link-img-adalab {
   width: 103px;
+
+  @media all and (min-width: 768px) {
+
+  }
 }
 
 .footer__img-adalab {
