@@ -99,11 +99,30 @@ body {
 @media all and (min-width:768px){
 
   .logo{
-    margin-top: 94px;
-    margin-bottom: 36px;
+    margin-top: 348px;
+    margin-bottom: 31px;
     width: 410px;
     height: 107px;
   }
+  .maintitle{
+    font-size: $font-size-xxl;
+    margin-bottom: 4px;
+    margin-top: 0;
+  }
+  .parraph1{
+    width: 331px;
+    height: 48px;
+    font-size: 13px;
+    margin-bottom: 21px;
+  }
+  .iconbox{
+    width: 325px;
+    height: 86px;
+  }
+  .startbutt {
+    margin-top: 186px;
+    margin-bottom: 59px;
 
+  }
 
 }

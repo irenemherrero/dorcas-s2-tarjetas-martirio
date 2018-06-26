@@ -3,8 +3,6 @@ $font-size-super-xl:    px;
 $font-size-super:       px;
 $font-size-su:          px;
 $font-size-xxl-plus:    px;
-$font-size-xxl:         24px;
-$font-size-xl-plus:     22px;
 *//*
 $font-size-super-xl:    px;
 $font-size-super:       px;
@@ -555,23 +553,44 @@ body {
   margin-bottom: 30px;
 }
 
-
-@media all and (min-width: 768px) {
-  .logo {
-    margin-top: 94px;
-    margin-bottom: 36px;
-    width: 410px;
-    height: 107px;
-  }
-}
-
 .preview-container {
   border: 0;
   width: 100%;
   height: 457px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+}
 
+@media all and (min-width: 768px) {
+  .logo {
+    margin-top: 348px;
+    margin-bottom: 31px;
+    width: 410px;
+    height: 107px;
+  }
+
+  .maintitle {
+    font-size: 24px;
+    margin-bottom: 4px;
+    margin-top: 0;
+  }
+
+  .parraph1 {
+    width: 331px;
+    height: 48px;
+    font-size: 13px;
+    margin-bottom: 21px;
+  }
+
+  .iconbox {
+    width: 325px;
+    height: 86px;
+  }
+
+  .startbutt {
+    margin-top: 186px;
+    margin-bottom: 59px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
