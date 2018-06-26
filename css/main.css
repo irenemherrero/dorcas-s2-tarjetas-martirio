@@ -470,6 +470,7 @@ body {
 
 .parraph1 {
   font-family: "Open Sans", sans-serif;
+  width: 268px;
   font-weight: normal;
   text-align: center;
   font-style: normal;
@@ -490,7 +491,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid rgba(225, 115, 52, 0.5);
+  border: 2px solid rgba(225, 115, 52, 0.3);
   width: 268px;
   height: 78px;
   border-radius: 4px;
@@ -526,7 +527,6 @@ body {
   margin: 0;
 }
 
-
 .startbutt {
   width: 129px;
   height: 42px;
@@ -547,6 +547,15 @@ body {
   text-decoration: none;
   margin-top: 40px;
   margin-bottom: 30px;
+}
+
+@media all and (min-width: 768px) {
+  .logo {
+    margin-top: 94px;
+    margin-bottom: 36px;
+    width: 410px;
+    height: 107px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
