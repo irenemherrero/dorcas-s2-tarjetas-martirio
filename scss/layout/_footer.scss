@@ -7,19 +7,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
   font-family: $font-family-primary;
   font-size: $font-size-m;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__copiright {
+  align-self: center;
   color: $color-light-dark;
-  margin: 20px auto 10px;
+  
+  margin: 20px 10px;
+
+  @media all and (min-width: 768px) {
+    margin: 20px 0 20px 41px;
+  }
 }
 
 .footer__link-img-adalab {
   width: 103px;
 
+  @media all and (min-width: 768px) {
+
+  }
 }
+
 .footer__img-adalab {
   width: 103px;
   margin-bottom: 20px;
