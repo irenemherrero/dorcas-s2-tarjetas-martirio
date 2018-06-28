@@ -123,3 +123,18 @@ padding-top: 40px;
       padding-right: 40px;
   }
 }
+
+//BOTON CREAR Tarjetas
+.form_title3{
+font-family: $font-family-primary;
+font-weight: $semibold;
+font-size: $font-size-l;
+color: $color-middark;
+text-transform: uppercase;
+display:inline-block;
+}
+.contenedor-boton{
+  display: flex;
+  justify-content: center;
+  
+}

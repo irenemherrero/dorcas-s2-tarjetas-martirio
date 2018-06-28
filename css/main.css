@@ -418,6 +418,24 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.form_title3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #54585a;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.contenedor-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
