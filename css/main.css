@@ -573,6 +573,173 @@ body {
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
 }
 
+.margin-preview {
+  padding: 10px 35px 30px 45px;
+  height: 100%;
+}
+
+.button-reset__container {
+  width: 75px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icono-basura {
+  width: 11px;
+  height: 20px;
+  color: #54585a;
+  margin: 9px;
+}
+
+.button-reset__title {
+  width: 34px;
+  height: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #54585a;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.button-reset__link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.preview {
+  margin-top: 20px;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  height: 367px;
+}
+
+.preview_title {
+  height: 75px;
+  background-color: #fff;
+  padding-top: 23px;
+}
+
+.preview-title__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 42px;
+}
+
+.color-line {
+  height: 42px;
+  width: 5px;
+  background-color: #a2deaf;
+}
+
+.container-name-profesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.name_line {
+  margin: 0;
+  font-family: "Comic Sans MS", "Chilanka";
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.11;
+  color: #114e4e;
+}
+
+.profesion_line {
+  margin: 0;
+  font-family: "Comic Sans MS", "Chilanka";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #54585a;
+}
+
+.photo-container {
+  height: 200px;
+}
+
+.footer-preview__container {
+  background-color: #fff;
+}
+
+.logos-container {
+  height: 52px;
+  border-bottom: 2px solid rgba(67, 135, 146, 0.2);
+  padding: 10px 0px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.logo-preview {
+  color: #114e4e;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.boton-red-social {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 2px #a2deaf;
+  text-decoration: none;
+  position: relative;
+  margin-right: 10px;
+}
+
+.etiquetas-habilidades-container {
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 10px 10px 15px;
+}
+
+.etiqueta-habilidad {
+  width: 46px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #438792;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 10px;
+  text-align: center;
+}
+
 .preview-green-lighter {
   border-color: #a2deaf;
   background: #a2deaf;
