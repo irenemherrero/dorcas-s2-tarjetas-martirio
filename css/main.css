@@ -227,11 +227,9 @@ $font-size-xl-plus:     22px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
@@ -245,11 +243,13 @@ $font-size-xl-plus:     22px;
 
 .footer__link-img-adalab {
   width: 103px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 30px 40px 20px 0;
 }
 
 .footer__img-adalab {
   width: 103px;
-  margin-bottom: 20px;
 }
 
 .header__link {
@@ -571,6 +571,57 @@ body {
   height: 457px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+}
+
+.preview-green-lighter {
+  border-color: #a2deaf;
+  background: #a2deaf;
+}
+
+.preview-green-light {
+  background-color: #438792;
+}
+
+.preview-green-dark {
+  color: #114e4e;
+}
+
+.preview-red-lighter {
+  border-color: #e95626;
+  background: #e95626;
+}
+
+.preview-red-light {
+  background-color: #bd1010;
+}
+
+.preview-red-dark {
+  color: #420101;
+}
+
+.preview-blue-lighter {
+  border-color: #a0c0cf;
+  background: #a0c0cf;
+}
+
+.preview-blue-light {
+  background-color: #dfe5eb;
+}
+
+.preview-blue-dark {
+  color: #3e5b65;
+}
+
+.preview__font-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.preview__font-comic {
+  font-family: 'Comic Sans MS', 'Chilanka', sans-serif;
+}
+
+.preview__font-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media all and (min-width: 768px) {
