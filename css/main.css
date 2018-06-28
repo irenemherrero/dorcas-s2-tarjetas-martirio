@@ -519,7 +519,7 @@ body {
   -webkit-text-decoration-color: none;
   text-decoration-color: none;
   color: #54585a;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -568,6 +568,11 @@ body {
     margin: 20px 0 20px 41px;
   }
 
+  .form__fill {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .logo {
     margin-top: 348px;
     margin-bottom: 31px;
@@ -584,7 +589,7 @@ body {
   .parraph1 {
     width: 331px;
     height: 48px;
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 21px;
   }
 
