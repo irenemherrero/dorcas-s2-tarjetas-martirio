@@ -4,3 +4,132 @@
     height: 457px;
     background-image: linear-gradient(to bottom, $color-midmiddark, $color-midtonemidark);
 }
+.margin-preview{
+    padding: 10px 35px 30px 45px;
+    height: 100%;
+}
+.button-reset__container{
+    width: 75px;
+    height: 30px;
+    border: 1px solid $color-ligthtone;
+    border-radius: 15px;
+    display: flex;
+}
+.icono-basura{
+    width: 11px;
+    height: 20px;
+    color: $color-middark;
+    margin: 9px;
+    
+}
+.button-reset__title{
+    width: 34px;
+    height: 20px;
+    font-family: $font-family-primary;
+    font-size: $font-size-s;
+    font-weight: $normal;
+    color: $color-middark;
+    text-transform: uppercase;
+    margin:0;
+}
+.button-reset__link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.preview{
+    margin-top: 20px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    height: 367px;
+
+}
+.preview_title{
+    height: 75px;
+    background-color: $color-ligthtone;
+    padding-top: 23px;
+}
+.preview-title__container{
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+}
+.color-line{
+    height: 42px;
+    width: 5px;
+    background-color: $color-secondary-lighter;
+}
+.container-name-profesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.name_line{
+    margin: 0;
+    font-family: "Comic Sans MS", "Chilanka";
+    font-size: $font-size-l;
+    font-weight: $bold;
+    line-height: 1.11;
+    color: $color-secondary;
+
+}
+.profesion_line{
+    margin: 0;
+    font-family: "Comic Sans MS", "Chilanka";
+    font-size: $font-size-m-plus;
+    font-weight: $normal;
+    line-height: 1.25;
+    color: $color-middark;
+}
+.photo-container{
+    height: 200px;
+}
+.footer-preview__container{
+    background-color: $color-ligthtone;
+}
+.logos-container{
+    height: 52px;
+    border-bottom: 2px solid rgba($color-secondary-light, 0.2);
+    padding: 10px 0px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo-preview{
+    color: $color-secondary;
+    left:50%;
+    top:50%;
+    position:absolute;
+    transform:translate(-50%, -50%);
+  }
+.boton-red-social{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 2px $color-secondary-lighter;
+    text-decoration: none;
+    position: relative;
+    margin-right: 10px;
+}
+
+.etiquetas-habilidades-container{
+    height: 38px;
+    display: flex;
+    padding: 10px 10px 10px 15px;
+}
+
+.etiqueta-habilidad{
+    width: 46px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: $color-secondary-light;
+    color: $color-ligthtone;
+    font-family: $font-family-primary;
+    font-size: $font-size-s-plus;
+    font-weight: $normal;
+    margin-top: 0;
+    margin-right: 10px;
+    text-align: center;
+
+    
+}
