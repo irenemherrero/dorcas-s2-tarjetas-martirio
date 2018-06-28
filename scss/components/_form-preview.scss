@@ -6,3 +6,63 @@
     height: 457px;
     background-image: linear-gradient(to bottom, $color-midmiddark, $color-midtonemidark);
 }
+
+//CLASES DE Diseña
+
+// PALETA VERDE //
+.preview-green-lighter {
+  border-color: $color-secondary-lighter;
+  background: $color-secondary-lighter;
+}
+
+.preview-green-light {
+  background-color: $color-secondary-light;
+}
+
+.preview-green-dark {
+  color: $color-secondary;
+}
+
+// PALETA ROJA //
+
+.preview-red-lighter {
+  border-color: $color-red-sunset;
+  background: $color-red-sunset;
+}
+
+.preview-red-light {
+  background-color: $color-red-bright;
+}
+
+.preview-red-dark {
+  color: $color-red-blood;
+}
+
+// PALETA AZUL //
+
+.preview-blue-lighter {
+  border-color: $color-regent;
+  background: $color-regent;
+}
+
+.preview-blue-light {
+  background-color: $color-solitude;
+}
+
+.preview-blue-dark {
+  color: $color-San-Juan;
+}
+
+// CLASE TIPOGRAFIAS //
+
+.preview__font-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.preview__font-comic {
+  font-family: 'Comic Sans MS', 'Chilanka', sans-serif;
+}
+
+.preview__font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
