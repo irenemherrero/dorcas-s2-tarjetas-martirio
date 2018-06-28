@@ -425,6 +425,7 @@ body {
   color: #54585a;
   text-transform: uppercase;
   display: inline-block;
+  margin: 0;
 }
 
 .contenedor-boton {
@@ -434,6 +435,48 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.makecard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  background-color: #e17334;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  border-radius: 12px;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.rectangle {
+  width: 280px;
+  height: 1px;
+  background-color: #d8d8d8;
 }
 
 * {
