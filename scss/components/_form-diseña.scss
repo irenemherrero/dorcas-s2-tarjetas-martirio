@@ -1,14 +1,15 @@
 //form-diseña-Maria
 //icons
 
-.rectangle{
-    width: 21px;
-    height: 18px;
-    color: $color-primary;
+.rectangle {
+  width: 21px;
+  height: 18px;
+  color: $color-primary;
 }
-.arrow  {
-    width: 16px;
-    height: 18px;
+
+.arrow {
+  width: 16px;
+  height: 18px;
 }
 
 //position
@@ -30,7 +31,7 @@
   align-items: flex-start;
   margin: 20px;
   align-items: center;
-    
+
 }
 
 .container__square{
@@ -142,6 +143,3 @@
     width: 30px;
     background-color: $color-regent;
 }
-
-
-

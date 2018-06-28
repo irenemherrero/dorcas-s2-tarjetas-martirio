@@ -230,13 +230,15 @@ $font-size-xl-plus:     22px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100vw;
-  margin: 0 auto;
+  -ms-flex-item-align: center;
+  align-self: center;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
 .footer__copiright {
+  -ms-flex-item-align: center;
+  align-self: center;
   color: #6b6b6b;
   margin: 20px 10px;
 }
