@@ -1,10 +1,10 @@
 //form-diseña-Maria
 //icons
 
-.rectangle{
-    width: 21px;
-    height: 18px;
-    color: $color-primary;
+.rectangle {
+  width: 21px;
+  height: 18px;
+  color: $color-primary;
 }
 .arrow  {
     width: 16px;
@@ -202,6 +202,3 @@
 .third-color__square3 {
     @include creatingSquares ($color-regent);
 }
-
-
-
