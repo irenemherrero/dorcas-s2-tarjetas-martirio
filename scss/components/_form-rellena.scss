@@ -5,11 +5,13 @@
     padding-right: 20px;
     margin: 0;
 }
+
 .icono-teclado{
   color: $color-primary;
   align-self: center;
   margin-right:10px;
 }
+
 .form__title{
   font-family: $font-family-primary;
   font-weight: $semibold;
@@ -23,10 +25,12 @@
   display: flex;
   flex-direction: row;
 }
+
 .form__container{
   display: flex;
   flex-direction: column;
 }
+
 .form__label{
   font-family: $font-family-primary;
   font-weight: $normal;
@@ -139,6 +143,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: red;
 }
 .makecard {
   display: flex;
