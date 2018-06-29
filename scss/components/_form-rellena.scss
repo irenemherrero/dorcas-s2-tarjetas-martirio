@@ -30,12 +30,10 @@
   display: flex;
   flex-direction: row;
 }
-
 .form__container{
   display: flex;
   flex-direction: column;
 }
-
 .form__label{
   font-family: $font-family-primary;
   font-weight: $normal;
@@ -148,7 +146,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: red;
 }
 .makecard {
   display: flex;
@@ -168,8 +165,31 @@
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.rectangle{
+.rectangl2{
   width: 280px;
   height: 1px;
   background-color: #d8d8d8;
+  margin-bottom: 20px;
+  background-color: grey;
+}
+
+.contenedor-twitter{
+ width: 181px;
+ height: 30px;
+ border-radius: 3px;
+
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+.maketwitter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+}
+.iconotwitter{
+
 }
