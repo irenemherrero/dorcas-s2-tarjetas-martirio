@@ -1,22 +1,22 @@
 
 .form__fill{
-<<<<<<< HEAD
-    border:0;
-    padding-left:20px;
-    padding-right: 20px;
-    margin: 0;
-=======
+
+  border:0;
+  padding-left:20px;
+  padding-right: 20px;
+  margin: 0;
   border:0;
   padding-left: 20px;
   padding-right: 0px;
   margin: 0;
->>>>>>> 7ff9911ab4c50a8bf668cb41d51a651a9de3f8bd
 }
+
 .icono-teclado{
   color: $color-primary;
   align-self: center;
   margin-right:10px;
 }
+
 .form__title{
   font-family: $font-family-primary;
   font-weight: $semibold;
@@ -30,10 +30,12 @@
   display: flex;
   flex-direction: row;
 }
+
 .form__container{
   display: flex;
   flex-direction: column;
 }
+
 .form__label{
   font-family: $font-family-primary;
   font-weight: $normal;
@@ -146,6 +148,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: red;
 }
 .makecard {
   display: flex;
