@@ -4,6 +4,7 @@
 var form_name;
 var form_job;
 var form_email;
+var form_tfn;
 var form_lk;
 var form_gh;
 
@@ -24,6 +25,12 @@ function changeCard () {
 
     var j = document.querySelector('.email_button');
     j.href ='mailto:'+form_email;
+
+    // cambio el enlace de telefono //
+
+    var m = document.querySelector('.tfn_button');
+    m.href ='tel:'+form_tfn;
+
 
     // cambio el enlace de linkedin de la vista previa //
 
@@ -56,17 +63,25 @@ var catch_job = document.querySelector('#puesto');
     form_email = catch_email.value;
     console.log(form_email);
 
-    // guardo linkedin //
-    var catch_lk = document.querySelector('#linkedin');
 
-      form_lk = catch_lk.value;
-      console.log(form_lk);
+  // guardo telefono //
+  var catch_tfn = document.querySelector('#telefono');
 
-    // guardo linkedin //
-    var catch_gh = document.querySelector('#github');
+    form_tfn = catch_tfn.value;
+    console.log(form_tfn);
 
-      form_gh = catch_gh.value;
-      console.log(form_gh);
+
+  // guardo linkedin //
+  var catch_lk = document.querySelector('#linkedin');
+
+    form_lk = catch_lk.value;
+    console.log(form_lk);
+
+  // guardo github //
+  var catch_gh = document.querySelector('#github');
+
+    form_gh = catch_gh.value;
+    console.log(form_gh);
 
   changeCard();
 }
