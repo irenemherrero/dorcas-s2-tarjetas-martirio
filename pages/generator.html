@@ -25,35 +25,40 @@
 	<form class="form" action="/signup" method="post">
 		<fieldset class="form__desing">
 			<div class="container__rectangle_title_arrow">
-				<i class="rectangle far fa-object-ungroup"></i>
-				<legend class="form__title-principal">DISEÑA</legend>
+				<div class="container__rectangle_title">
+					<i class="rectangle far fa-object-ungroup"></i>
+					<legend class="form__title-principal">DISEÑA</legend>
+				</div>
 				<div class="arrowup">
 					<i class="arrow fas fa-angle-up"></i>
 				</div>
-		 	</div>
+			</div>
 				<fieldset class="fieldset-colors">
 					<div class="container-legend-label-input">
 					    <legend class="form__subtitle">COLORES</legend>
 					  		<div class="container__input__labels">
-						  		<label for="form__subtitle__first-color">
-									<input id="form__subtitle__first-color" type="radio" value="colopOptions" name="colopOptions" />
-							  			<div class="container__square">
-							  				<div class="first-color__square1"></div>
-							  				<div class="first-color__square2"></div>
-								  			<div class="first-color__square3"></div>
-							  			</div> 
+						  		<label class="container_input_div" for="form__subtitle__first-color">
+								<input class="clikable" id="form__subtitle__first-color" type="radio" value="radio" name="radio" checked="checked" />
+								<span class="checkmark"></span>
+							  		<div class="container__square">
+							  			<div class="first-color__square1"></div>
+							  			<div class="first-color__square2"></div>
+								  		<div class="first-color__square3"></div>
+							  		</div> 
 						  		</label>
-						  		<label for="form__subtitle__second-color">
-									<input id="form__subtitle__second-color" type="radio" value="colopOptions" name="colopOptions" />
+						  		<label class="container_input_div" for="form__subtitle__second-color">
+									<input class="clikable" id="form__subtitle__second-color" type="radio" value="radio" name="radio" checked="checked"/>
+									<span class="checkmark"></span>	
 										<div class="container__square">
-											<div class="second-color__square1"></div>
+										    <div class="second-color__square1"></div>
 											<div class="second-color__square2"></div>
 											<div class="second-color__square3"></div>
 										</div>
 								</label>
-								<label for="form__subtitle__third-color">
-									<input id="form__subtitle__third-color" type="radio" value="colopOptions" name="colopOptions" />
-										<div class="container__square">
+								<label class="container_input_div" for="form__subtitle__third-color">
+									<input class="clikable" id="form__subtitle__third-color" type="radio" value="radio" name="radio" checked="checked" />
+									<span class="checkmark"></span>	
+									<div class="container__square group-square2">
 											<div class="third-color__square1"></div>
 											<div class="third-color__square2"></div>
 											<div class="third-color__square3"></div>
@@ -68,19 +73,23 @@
 					<div class="container-legend-label-input">
 						<legend class="form__subtitle">FUENTES</legend>
 							<div class="container__input__labels">
-								<label class="font1" for="form__subtitle__first-font">
-									<input id="form__subtitle__firt-font" type="radio" value="chooseseat" name="colopOptions" />
+								<label class="font1 container_input_font container_input_div" for="form__subtitle__first-font">
+									<input class="clikable" id="form__subtitle__first-font" type="radio" value="choosecolor" name="radio" checked="checked"/>
+									<span class="checkmark"></span>
 									<div class="container__font">
 									Ubuntu		
 									</div>
 								</label>
-								<label class="font2" for="form__subtitle__second-font">
-									<input id="form__subtitle__second-font" type="radio" value="chooseseat" name="colopOptions" />
+								<label class="font2 container_input_font container_input_div" for="form__subtitle__second-font">
+									<input class="clikable" id="form__subtitle__second-font" type="radio" value="choosecolor" name="radio" checked="checked" />
+									<span class="checkmark"></span>
 									<div class="container__font">
 									Comic Sans
 									</div>
 								</label>
-								<label class="font3" for="form__subtitle__third-font"><input id="form__subtitle__third-font" type="radio" value="chooseseat" name="colopOptions" />
+								<label class="font3 container_input_div" for="form__subtitle__third-font">
+									<input class="clikable" id="form__subtitle__third-font" type="radio" value="choosecolor" name="radio" checked="checked" />
+									<span class="checkmark"></span>
 									<div class="container__font">
 									Montserrat
 									</div>

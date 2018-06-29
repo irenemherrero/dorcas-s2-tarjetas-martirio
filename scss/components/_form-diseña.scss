@@ -9,36 +9,111 @@
 .arrow  {
     width: 16px;
     height: 18px;
+    color: $color-middark;
 }
-
+//style clikable
+.container_input_div {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ .clikable{
+    opacity: 0;
+}
+.checkmark {
+    position: relative;
+    height: 17px;
+    width: 17px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $color-midtonemidark;   
+    opacity: 1;
+    background-color: $color-ligthtone;
+    border-radius: 50%;
+}
+.clikable:checked ~ .checkmark {
+    background-color: #2196F3;
+    opacity: 1;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.clikable:checked ~ .checkmark:after {
+  display: block;
+  @include absoluteCentered ();
+  
+}
+.container_input_div .checkmark:after {
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background:$color-ligthtone;
+  
+}
 //position
 
 .container__rectangle_title_arrow{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.container__rectangle_title{
+    display: flex;
+    align-items: baseline;
+    width: 125px;
+    @media all and (min-width:768px){
+       margin-left: 40px; 
+    }
+}
+.rectangle{
+    margin-left: 20px;
+    @media all and (min-width:768px){
+        margin-left: 0px; 
+     }
+}
+.arrowup{
+    margin-right: 20px;
+}
+.form__title-principal{
+    margin-left: 10px; 
+    padding: 0;  
 }
 
 .form__subtitle {
-    margin-right: 50px;
+   align-self: flex-start;
+}
+.fieldset-colors{
+   padding: 0;
 }
 .container-legend-label-input{
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
+    padding: 0 20px 30px 39px;
 }
 .container__input__labels > *{
   display: flex;
   align-items: flex-start;
-  margin: 20px;
-  align-items: center;
-    
+  align-items: center;  
 }
-
+.container_input_div{
+    margin-bottom: 20px;
+}
 .container__square{
   display: flex;
   margin-left: 10px;
 }
+.container_input_font{
+    margin-bottom: 9px;
+}
 .container__font {
     margin-left: 10px;
+   
 }
 
 //borders
@@ -50,6 +125,7 @@
 .fieldset-colors {
     border-width: 0;
     width: 100%;
+    margin: 0;
 
 }
 
@@ -71,12 +147,13 @@
     font-family: $font-family-primary;
     font-weight: $normal;
     font-size: $font-size-m;
+    color: $color-middark;
 }
 .font1{
-    margin-right: 10px;
     font-family: $font-family-primary;
     font-weight: $semibold;
     font-size: $font-size-m-plus;
+    color: $color-middark;
 
 }
 
@@ -84,63 +161,46 @@
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-weight: $normal;
     font-size: $font-size-m-plus;
-
+    color: $color-middark;
 }
 
 .font3{
     font-family: $font-family-secundary;
     font-weight: $normal;
     font-size: $font-size-m-plus;
+    color: $color-middark;
 }
 // colors
 
 //first-color
 .first-color__square1 {
-    height: 25px;
-    width: 30px;
-    background-color: $color-secondary;
+    @include creatingSquares ($color-secondary);
 }
 .first-color__square2 {
-    height: 25px;
-    width: 30px;
-    background-color: $color-secondary-light;
+    @include creatingSquares ($color-secondary-light);
 }
 .first-color__square3 {
-    height: 25px;
-    width: 30px;
-    background-color: $color-secondary-lighter;
+    @include creatingSquares ($color-secondary-lighter);
 }
 //second-color
 .second-color__square1 {
-    height: 25px;
-    width: 30px;
-    background-color: $color-red-blood
+    @include creatingSquares ($color-red-blood); 
 }
 .second-color__square2 {
-    height: 25px;
-    width: 30px;
-    background-color: $color-red-bright;
+    @include creatingSquares ($color-red-bright);
 }
 .second-color__square3 {
-    height: 25px;
-    width: 30px;
-    background-color: $color-red-sunset
+    @include creatingSquares ($color-red-sunset);
 }
 //third-color
 .third-color__square1 {
-    height: 25px;
-    width: 30px;
-    background-color:$color-San-Juan
+    @include creatingSquares ($color-San-Juan);
 }
 .third-color__square2 {
-    height: 25px;
-    width: 30px;
-    background-color:$color-solitude;
+    @include creatingSquares ($color-solitude);
 }
 .third-color__square3 {
-    height: 25px;
-    width: 30px;
-    background-color: $color-regent;
+    @include creatingSquares ($color-regent);
 }
 
 
