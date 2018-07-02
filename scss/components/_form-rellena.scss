@@ -1,9 +1,16 @@
 
 .form__fill{
+<<<<<<< HEAD
+  border:0;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin: 0;
+=======
     border:0;
     padding-left:20px;
     padding-right: 20px;
     margin: 0;
+>>>>>>> 7c92c99cdc37a184b02659b80d14155bfe96183a
 }
 
 .icono-teclado{
@@ -187,4 +194,7 @@
 }
 .iconotwitter{
 
+}
+.icon_comparte{
+  color:$color-primary;
 }
