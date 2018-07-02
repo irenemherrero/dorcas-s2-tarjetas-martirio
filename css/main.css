@@ -114,10 +114,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
-  border: 0;
-  padding-left: 20px;
-  padding-right: 0px;
-  margin: 0;
 }
 
 .icono-teclado {
@@ -715,7 +711,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.rectangle {
+.rectangle_2 {
   width: 21px;
   height: 18px;
   color: #e17334;
@@ -787,6 +783,7 @@ body {
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 25px;
+  margin-left: 40px;
 }
 
 .container__rectangle_title {
