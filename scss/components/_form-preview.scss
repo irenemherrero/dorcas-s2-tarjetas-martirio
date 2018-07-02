@@ -1,5 +1,8 @@
 
-
+.mediaqueries-preview{
+    display: flex;
+    flex-direction: row-reverse;
+}
 .preview-container{
     border:0;
     width: 100%;
@@ -8,6 +11,7 @@
     display: flex;
     justify-content: center;
 }
+
 .margin-preview{
     padding: 10px 35px 30px 45px;
     height: 100%;
@@ -88,6 +92,10 @@
 }
 .photo-container{
     height: 200px;
+}
+.foto-preview{
+    background-position: center;
+    background-size: cover;
 }
 .footer-preview__container{
     background-color: $color-ligthtone;
