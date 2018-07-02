@@ -314,16 +314,13 @@ body {
 }
 
 .rectangl2 {
-  width: 280px;
+  width: 95%;
   height: 1px;
   background-color: #d8d8d8;
   margin-bottom: 20px;
-  background-color: grey;
 }
 
 .contenedor-twitter {
-  width: 181px;
-  height: 30px;
   border-radius: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +337,21 @@ body {
   align-items: center;
 }
 
+.titletarjeta {
+  color: #54585a;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.parraphtarjeta {
+  color: #e17334;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
 .maketwitter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,6 +366,17 @@ body {
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #00a0f5;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
 
 * {
