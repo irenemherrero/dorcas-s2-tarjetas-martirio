@@ -379,6 +379,10 @@ body {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
 
+.icon_comparte {
+  color: #e17334;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -514,6 +518,12 @@ body {
   height: 457px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .margin-preview {
@@ -564,6 +574,7 @@ body {
   -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   height: 367px;
+  width: 240px;
 }
 
 .preview_title {
