@@ -88,3 +88,7 @@ var catch_job = document.querySelector('#puesto');
 }
 
 create_card_button.addEventListener('click', saveData);
+
+
+//form diseña
+var radio = document.querySelector("form__subtitle__first-color");
