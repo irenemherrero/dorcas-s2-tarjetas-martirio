@@ -7,6 +7,7 @@ var form_email;
 var form_tfn;
 var form_lk;
 var form_gh;
+var create_card_button = document.querySelector(".submit");
 
 
 
@@ -86,7 +87,4 @@ var catch_job = document.querySelector('#puesto');
   changeCard();
 }
 
-
-
-var create_card_button = document.querySelector(".submit");
 create_card_button.addEventListener('click', saveData);

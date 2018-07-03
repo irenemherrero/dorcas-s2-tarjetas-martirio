@@ -623,11 +623,6 @@ body {
   height: 200px;
 }
 
-.foto-preview {
-  background-position: center;
-  background-size: cover;
-}
-
 .footer-preview__container {
   background-color: #fff;
 }
@@ -1043,6 +1038,15 @@ body {
   .startbutt {
     margin-top: 186px;
     margin-bottom: 59px;
+  }
+
+  .preview-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .container__rectangle_title {
