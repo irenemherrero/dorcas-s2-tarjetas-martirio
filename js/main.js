@@ -1,5 +1,7 @@
 'use strict';
 
+// CODIGO DE RECOGIDA DE DATOS DEL FORMULARIO //
+
 // JS PARA recoger datos //
 var form_name;
 var form_job;
