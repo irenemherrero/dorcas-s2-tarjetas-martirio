@@ -1053,6 +1053,16 @@ body {
     margin-bottom: 59px;
   }
 
+  .container-mediaqueries-preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
   .container__rectangle_title {
     margin-left: 40px;
   }
