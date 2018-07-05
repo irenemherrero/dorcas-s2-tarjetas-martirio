@@ -30,8 +30,8 @@
 
 							</div>
 							<div class="container-name-profesion">
-								<p class="name_line">Nombre Apellido</p>
-								<p class="profesion_line">Front-end developer</p>
+								<p class="name_line" id="element-nombre">Nombre Apellido</p>
+								<p class="profesion_line" id="element-puesto">Front-end developer</p>
 							</div>
 						</div>
 					</div>
@@ -50,17 +50,18 @@
 
 <div class="container-izquierda">
 	<!-- diseña - MariaV -->
-	<form class="form" action="/signup" method="post">
-		<fieldset class="form__desing">
-			<div class="container__rectangle_title_arrow">
+<div class="colapsable1 colapsable">
+			<div class="container__rectangle_title_arrow titulo-colapsable">
 				<div class="container__rectangle_title">
 					<i class=" far fa-object-ungroup rectangle_2"></i>
-					<legend class="form__title-principal">DISEÑA</legend>
+					<legend class="form__title-principal titulo-colapsable">DISEÑA</legend>
 				</div>
 				<div class="arrowup">
 					<i class="arrow fas fa-angle-up"></i>
 				</div>
 			</div>
+	<div class="contenido-colapsable">
+		<form class="form" action="/signup" method="post">
 			<fieldset class="fieldset-colors">
 				<div class="container-legend-label-input">
 					<legend class="form__subtitle">COLORES</legend>
@@ -94,10 +95,9 @@
 						</label>
 					</div>
 				</div>
-				</fieldset>
-		    </fieldset>
-    </form>
-    <form class="form" action="/signup" method="post">
+			</fieldset> 
+    	</form>
+    	<form class="form" action="/signup" method="post">
 				<fieldset class="fieldset-font">
 					<div class="container-legend-label-input">
 						<legend class="form__subtitle">FUENTES</legend>
@@ -124,25 +124,27 @@
 									</div>
 								</label>
 							</div>
-
-					
-				</div>
-
-			</fieldset>
-
-	</form>
+					</div>
+				</fieldset>
+		</form>
+	</div>
+</div>
 	<!-- rellena - Irene -->
+<div class="colapsable2 colapsable">
 	<form class="form" action="">
 		<fieldset class="form__fill">
-			<div class="contenedor-icono">
+			<div class="contenedor-icono titulo-colapsable">
 				<i class="far fa-keyboard icono-teclado"></i>
 				<h1 class="form__title">Rellena</h1>
 			</div>
+		<div class="contenido-colapsable">
 			<div class="form__container">
+				<!-- Campos JS -->
 				<label class="form__label" for="nombre">Nombre completo</label>
-				<input class="form__input" id="nombre" type="text" name="nombre" placeholder="Ej. Juanita Reina" >
+				<input class="form__input form__input--nombre" id="nombre" type="text" name="nombre" placeholder="Ej. Juanita Reina" data-donde="element-nombre" >
 				<label class="form__label" for="puesto">Puesto</label>
-				<input class="form__input" id="puesto" type="text" name="puesto" placeholder="Ej. Reina de la canción">
+				<input class="form__input form__input--puesto" id="puesto" type="text" name="puesto" placeholder="Ej. Reina de la canción" data-donde="element-puesto">
+				<!--  -->
 				<label class="form__label">Imagen de perfil</label>
 				<div class="form__container--imagen">
 					<a class="boton__añadir-imagen" href="#">Añadir imagen</a>
@@ -178,14 +180,18 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</fieldset>
 	</form>
+</div>
+<div class="colapsable3 colapsable">
 	<form class="form" action="">
 		<fieldset class="form__fill">
-			<div class="titleshare">
+			<div class="titleshare titulo-colapsable">
 				<i class="icono-teclado fas fa-share-alt"></i>
-				<h1 class="form_title3">Comparte</h1>
+				<h1 class="form_title3 titulo-colapsable">Comparte</h1>
 			</div>
+		<div class="contenido-colapsable">
 			<div class="contenedor-boton">
 				<a href="#" class="makecard submit">&nbsp;&nbsp;CREAR TARJETA
 					<i class="far fa-address-card"></i>
@@ -200,11 +206,12 @@
 				</a>
 				<span class="rectangl2"></span>
 			</div>
+		</div>
 		</fieldset>
 	</form>
 </div>
 </div>
-
+</div>
 	<footer class="footer">
 		<a class="no_link_decoration footer__copiright" href="#">
 			Tarjetas Martirio© 2018

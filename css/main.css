@@ -512,6 +512,18 @@ body {
   margin-bottom: 30px;
 }
 
+.contenido-colapsable {
+  display: none;
+}
+
+.colapsable--visible .titulo-colapsable {
+  background-color: opacity 0.5;
+}
+
+.colapsable--visible .contenido-colapsable {
+  display: block;
+}
+
 .mediaqueries-preview {
   display: -webkit-box;
   display: -ms-flexbox;

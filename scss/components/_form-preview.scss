@@ -1,4 +1,16 @@
 
+
+.contenido-colapsable{
+    display: none;
+}
+.colapsable--visible{
+    .titulo-colapsable {
+        background-color: opacity 0.5;
+      }
+      .contenido-colapsable {
+        display: block;
+      }
+}
 .mediaqueries-preview{
     display: flex;
     flex-direction: row-reverse;
