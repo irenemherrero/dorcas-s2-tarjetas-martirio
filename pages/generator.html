@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Martirio</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:900|Open+Sans:400,600" rel="stylesheet">
 	<link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
 	<header>
-		<a href="#" class="header__link" alt="Logo awesome"> <img class="header__img" src="../images/awesome.svg" alt=""> </a>
+		<a href="#" class="header__link" alt="Logo awesome">
+			<img class="header__img" src="../images/awesome.svg" alt=""> </a>
 	</header>
 
 	<!--preview - Irene-->
-	<div class="mediaqueries-preview">
-		<div class="preview-container">
-			<div class="margin-preview">
-				<div class="button-reset__container">
-					<a class="button-reset__link" href="#">
-						<i class="far fa-trash-alt icono-basura"></i>
-						<p class="button-reset__title">Reset</p>
-					</a>
-				</div>
-				<div class="preview">
-					<div class="preview_title">
-						<div class="preview-title__container">
-							<div class="color-line">
-
-							</div>
-							<div class="container-name-profesion">
-								<p class="name_line" id="element-nombre">Nombre Apellido</p>
-								<p class="profesion_line" id="element-puesto">Front-end developer</p>
-							</div>
+<div class="container-mediaqueries-preview">
+	<div class="preview-container">
+		<div class="margin-preview">
+			<div class="button-reset__container">
+				<a class="button-reset__link" href="#">
+					<i class="far fa-trash-alt icono-basura"></i>
+					<p class="button-reset__title">Reset</p>
+				</a>
+			</div>
+			<div class="preview">
+				<div class="preview_title">
+					<div class="preview-title__container">
+						<div class="color-line"></div>
+						<div class="container-name-profesion">
+							<p class="name_line">Nombre Apellido</p>
+							<p class="profesion_line">Front-end developer</p>
 						</div>
 					</div>
-					<div class="photo-container">
-						<img src="../images/martirio.jpg" alt="">
+				</div>
+				<div class="photo-container">
+					<img src="../images/martirio.jpg" alt="">
+				</div>
+				<div class="footer-preview__container">
+					<div class="logos-container">
+						<a class="boton-red-social tfn_button" href="#">
+							<i class="fas fa-mobile-alt logo-preview logo-fono"></i>
+						</a>
+						<a class="boton-red-social email_button" href="#">
+							<i class="fal fa-envelope logo-preview logo-carta"></i>
+						</a>
+						<a class="boton-red-social linkedin_button" href="#">
+							<i class="fab fa-linkedin-in logo-preview logo-in"></i>
+						</a>
+						<a class="boton-red-social github_button" href="#">
+							<i class="fab fa-github-alt logo-preview logo-github"></i>
+						</a>
 					</div>
 					<div class="etiquetas-habilidades-container">
 						<p class="etiqueta-habilidad">HTML</p>
@@ -46,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-	
+	</div>
 
 <div class="container-izquierda">
 	<!-- diseña - MariaV -->
@@ -60,32 +77,63 @@
 					<i class="arrow fas fa-angle-up"></i>
 				</div>
 			</div>
-	<div class="contenido-colapsable">
+			<div class="contenido-colapsable">
+				<fieldset class="fieldset-colors">
+					<div class="container-legend-label-input">
+						<legend class="form__subtitle">COLORES</legend>
+						<div class="container__input__labels">
+							<label class="container_input_div" for="form__subtitle__first-color">
+								<input class="clikable" id="form__subtitle__first-color" type="radio" value="radio" name="radio" checked="checked" />
+								<span class="checkmark"></span>
+								<div class="container__square">
+									<div class="first-color__square1"></div>
+									<div class="first-color__square2"></div>
+									<div class="first-color__square3"></div>
+								</div>
+							</label>
+							<label class="container_input_div" for="form__subtitle__second-color">
+								<input class="clikable" id="form__subtitle__second-color" type="radio" value="radio" name="radio" checked="checked" />
+								<span class="checkmark"></span>
+								<div class="container__square">
+									<div class="second-color__square1"></div>
+									<div class="second-color__square2"></div>
+									<div class="second-color__square3"></div>
+								</div>
+							</label>
+							<label class="container_input_div" for="form__subtitle__third-color">
+								<input class="clikable " id="form__subtitle__third-color" type="radio" value="radio" name="radio" checked="checked" />
+								<span class="checkmark"></span>
+								<div class="container__square group-square2">
+									<div class="third-color__square1"></div>
+									<div class="third-color__square2"></div>
+									<div class="third-color__square3"></div>
+								</div>
+							</label>
+						</div>
+				</fieldset>
+			
 		<form class="form" action="/signup" method="post">
 			<fieldset class="fieldset-colors">
 				<div class="container-legend-label-input">
-					<legend class="form__subtitle">COLORES</legend>
+					<legend class="form__subtitle">FUENTES</legend>
 					<div class="container__input__labels">
-						<label class="container_input_div" for="form__subtitle__first-color">
-							<input class="clikable" id="form__subtitle__first-color" type="radio" value="radio" name="radio" checked="checked" />
+						<label class="font1 container_input_font container_input_div" for="form__subtitle__first-font">
+							<input class="clikable" id="form__subtitle__first-font" type="radio" value="choosecolor" name="radio" checked="checked" />
 							<span class="checkmark"></span>
-							<div class="container__square">
-								<div class="first-color__square1"></div>
-								<div class="first-color__square2"></div>
-								<div class="first-color__square3"></div>
+							<div class="container__font">
+								Ubuntu
 							</div>
 						</label>
-						<label class="container_input_div" for="form__subtitle__second-color">
-							<input class="clikable" id="form__subtitle__second-color" type="radio" value="radio" name="radio" checked="checked"/>
+						<label class="font2 container_input_font container_input_div" for="form__subtitle__second-font">
+							<input class="clikable" id="form__subtitle__second-font" type="radio" value="choosecolor" name="radio" checked="checked"
+							/>
 							<span class="checkmark"></span>
-							<div class="container__square">
-								<div class="second-color__square1"></div>
-								<div class="second-color__square2"></div>
-								<div class="second-color__square3"></div>
+							<div class="container__font">
+								Comic Sans
 							</div>
 						</label>
-						<label class="container_input_div" for="form__subtitle__third-color">
-							<input class="clikable " id="form__subtitle__third-color" type="radio" value="radio" name="radio" checked="checked" />
+						<label class="font3 container_input_div" for="form__subtitle__third-font">
+							<input class="clikable" id="form__subtitle__third-font" type="radio" value="choosecolor" name="radio" checked="checked" />
 							<span class="checkmark"></span>
 							<div class="container__square group-square2">
 								<div class="third-color__square1"></div>
@@ -129,6 +177,7 @@
 		</form>
 	</div>
 </div>
+
 	<!-- rellena - Irene -->
 <div class="colapsable2 colapsable">
 	<form class="form" action="">
@@ -150,6 +199,7 @@
 					<a class="boton__añadir-imagen" href="#">Añadir imagen</a>
 					<div class="contenedor--imagen"></div>
 				</div>
+
 				<label class="form__label" for="email">Email</label>
 				<input class="form__input" id="email" type="mail" name="email" placeholder="Ej. reinadelacopla@ole.es">
 				<label class="form__label" for="telefono">Teléfono</label>
@@ -167,7 +217,11 @@
 							<option>SASS</option>
 							<option>JS</option>
 						</select>
-						<div class="boton--sumar-restar"><i class="icono--signo fas fa-minus"></i></div>
+						<div class="boton--sumar-restar"><i class="icono--signo fas fa-minus"></i>
+
+
+
+						</div>
 					</div>
 					<div class="form__container--habilidad">
 						<select class="form__select" id="habilidades2" name="habilidades2">
@@ -176,9 +230,11 @@
 							<option>SASS</option>
 							<option>JS</option>
 						</select>
-						<div class="boton--sumar-restar"><i class="icono--signo fas fa-plus"></i></div>
-					</div>
-				</div>
+						<div class="boton--sumar-restar"><i class="icono--signo fas fa-plus"></i>
+
+
+
+
 			</div>
 		</div>
 		</fieldset>
@@ -209,6 +265,7 @@
 		</div>
 		</fieldset>
 	</form>
+</div>
 </div>
 </div>
 </div>
