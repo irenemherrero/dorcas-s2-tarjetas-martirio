@@ -200,3 +200,90 @@
 .third-color__square3 {
     @include creatingSquares ($color-regent);
 }
+
+//clases change colors
+.redTarget {
+        .color-line{
+            background-color:$color-red-sunset;
+        }
+    
+    .name_line{
+        color:$color-red-blood;
+    }
+  .boton-red-social {
+      border: solid 2px $color-red-sunset;
+  }
+  .etiqueta-habilidad{
+      background-color: $color-red-bright;
+  }
+  .logo-preview{
+      color: $color-red-blood;
+  }
+}
+
+.greenTarget {
+    .color-line{
+        background-color:$color-secondary-lighter;
+    }
+
+.name_line{
+    color:$color-secondary;
+}
+.boton-red-social {
+  border: solid 2px $color-secondary-lighter;
+}
+.etiqueta-habilidad{
+  background-color: $color-secondary-light;
+}
+.logo-preview{
+  color: $color-secondary;
+}
+}
+
+.greyTarget {
+    .color-line{
+        background-color:$color-regent;
+    }
+
+.name_line{
+    color:$color-San-Juan;
+}
+.boton-red-social {
+  border: solid 2px $color-regent;
+}
+.etiqueta-habilidad{
+  background-color: $color-solitude;
+}
+.logo-preview{
+  color: $color-San-Juan;
+}
+}
+
+//clases change colors
+
+.ubuntuFont{
+    .name_line{
+      font-family: $font-family-primary;
+    }
+    .profesion_line{
+        font-family: $font-family-primary;
+    }
+}
+
+.comicFont{
+    .name_line{
+      font-family: $font-family-terciary;
+    }
+    .profesion_line{
+        font-family: $font-family-terciary;
+    }
+}
+
+.montFont{
+    .name_line{
+      font-family: $font-family-secundary;
+    }
+    .profesion_line{
+        font-family: $font-family-secundary;
+    }
+}

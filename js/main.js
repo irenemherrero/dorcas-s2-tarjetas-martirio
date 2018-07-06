@@ -69,7 +69,6 @@ function saveData () {
 var create_card_button = document.querySelector(".submit");
 create_card_button.addEventListener('click', saveData);
 
-
 //form diseña
 var radio = document.querySelector("form__subtitle__first-color");
 
@@ -111,3 +110,67 @@ function cerrarColapsables() {
 for (var i = 0; i < tituloColapsable.length; i++) {
   tituloColapsable[i].addEventListener('click', actualizarColapsable);
 }
+//color radio buttom\
+var preview = document.querySelector('.preview');
+var stateColor;
+var catchStateFirstColor = document.querySelector('#form__subtitle__first-color');
+var catchStateSecondColor = document.querySelector('#form__subtitle__second-color');
+var catchStateThirdColor = document.querySelector('#form__subtitle__third-color');
+function CheckStateFirstColor () {
+  var state = catchStateFirstColor.checked;
+  if (state === true) {
+    preview.classList.remove('redTarget', 'greyTarget');
+    preview.classList.add('greenTarget');
+  }
+}
+
+function CheckStateSecondColor () {
+  var state = catchStateSecondColor.checked;
+  if (state === true) {
+    preview.classList.remove('greenTarget', 'greyTarget');
+    preview.classList.add(catchStateSecondColor.value);
+  }
+}
+function CheckStateThirdColor () {
+  var state = catchStateThirdColor.checked;
+  if (state === true) {
+    preview.classList.remove('redTarget', 'greyTarget');
+    preview.classList.add('greyTarget');
+  }
+}
+catchStateFirstColor.addEventListener('click', CheckStateFirstColor );
+catchStateSecondColor.addEventListener('click', CheckStateSecondColor );
+catchStateThirdColor.addEventListener('click', CheckStateThirdColor );
+
+//font radio buttom
+
+var state;
+var catchStateFirstFont = document.querySelector('#form__subtitle__first-font');
+var catchStateSecondFont = document.querySelector('#form__subtitle__second-font');
+var catchStateThirdFont = document.querySelector('#form__subtitle__third-font');
+function CheckStateFirstFont () {
+    var state = catchStateFirstFont.checked;
+    if (state === true) {
+      preview.classList.remove('comicFont', 'montFont');
+      preview.classList.add('ubuntuFont');   
+    }
+}
+function CheckStateSecondFont () {
+  var state = catchStateSecondFont.checked;
+  if (state === true) {
+    preview.classList.remove('ubuntuFont', 'montFont');
+    preview.classList.add('comicFont');
+  }
+}
+function CheckStateThirdFont () {
+  var state = catchStateThirdFont.checked;
+  if (state === true) {
+    preview.classList.remove('comicFont', 'ubuntuFont');
+    preview.classList.add('montFont');
+  }
+}
+
+catchStateFirstFont.addEventListener('click', CheckStateFirstFont );
+catchStateSecondFont.addEventListener('click', CheckStateSecondFont );
+catchStateThirdFont.addEventListener('click', CheckStateThirdFont );
+

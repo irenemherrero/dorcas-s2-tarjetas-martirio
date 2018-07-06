@@ -1022,6 +1022,90 @@ body {
   background-color: #a0c0cf;
 }
 
+.redTarget .color-line {
+  background-color: #e95626;
+}
+
+.redTarget .name_line {
+  color: #420101;
+}
+
+.redTarget .boton-red-social {
+  border: solid 2px #e95626;
+}
+
+.redTarget .etiqueta-habilidad {
+  background-color: #bd1010;
+}
+
+.redTarget .logo-preview {
+  color: #420101;
+}
+
+.greenTarget .color-line {
+  background-color: #a2deaf;
+}
+
+.greenTarget .name_line {
+  color: #114e4e;
+}
+
+.greenTarget .boton-red-social {
+  border: solid 2px #a2deaf;
+}
+
+.greenTarget .etiqueta-habilidad {
+  background-color: #438792;
+}
+
+.greenTarget .logo-preview {
+  color: #114e4e;
+}
+
+.greyTarget .color-line {
+  background-color: #a0c0cf;
+}
+
+.greyTarget .name_line {
+  color: #3e5b65;
+}
+
+.greyTarget .boton-red-social {
+  border: solid 2px #a0c0cf;
+}
+
+.greyTarget .etiqueta-habilidad {
+  background-color: #dfe5eb;
+}
+
+.greyTarget .logo-preview {
+  color: #3e5b65;
+}
+
+.ubuntuFont .name_line {
+  font-family: "Open Sans", sans-serif;
+}
+
+.ubuntuFont .profesion_line {
+  font-family: "Open Sans", sans-serif;
+}
+
+.comicFont .name_line {
+  font-family: "Comic Sans MS", "Chilanka";
+}
+
+.comicFont .profesion_line {
+  font-family: "Comic Sans MS", "Chilanka";
+}
+
+.montFont .name_line {
+  font-family: "Merriweather", serif;
+}
+
+.montFont .profesion_line {
+  font-family: "Merriweather", serif;
+}
+
 @media all and (min-width: 768px) {
   .footer {
     -webkit-box-orient: horizontal;
