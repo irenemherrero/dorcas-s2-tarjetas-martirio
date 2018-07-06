@@ -1057,11 +1057,11 @@ body {
 }
 
 .montFont .name_line {
-  font-family: "Comic Sans MS", "Chilanka";
+  font-family: "Merriweather", serif;
 }
 
 .montFont .profesion_line {
-  font-family: "Comic Sans MS", "Chilanka";
+  font-family: "Merriweather", serif;
 }
 
 @media all and (min-width: 768px) {

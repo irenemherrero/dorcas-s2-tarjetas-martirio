@@ -110,7 +110,7 @@ function CheckStateSecondColor () {
   var state = catchStateSecondColor.checked;
   if (state === true) {
     preview.classList.remove('greenTarget', 'greyTarget');
-    preview.classList.add('redTarget');
+    preview.classList.add(catchStateSecondColor.value);
   }
 }
 function CheckStateThirdColor () {
