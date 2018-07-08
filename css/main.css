@@ -836,7 +836,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 30px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .container__rectangle_title {
@@ -847,10 +847,6 @@ body {
   -ms-flex-align: baseline;
   align-items: baseline;
   width: 125px;
-}
-
-.rectangle {
-  margin-left: 20px;
 }
 
 .arrowup {
@@ -881,6 +877,7 @@ body {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  margin-top: 25px;
   padding: 0 20px 30px 39px;
 }
 
