@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="155mm"
+   width="126mm"
    height="76mm"
-   viewBox="0 0 155 76"
+   viewBox="0 0 126 76"
    version="1.1"
    id="svg215"
    sodipodi:docname="before.svg"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
+     inkscape:zoom="0.91733827"
+     inkscape:cx="292.91339"
+     inkscape:cy="143.62205"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -55,7 +55,7 @@
      transform="translate(0,-221)">
     <g
        id="Tablet+"
-       transform="matrix(0.26458333,0,0,0.26458333,35.569645,249.68433)"
+       transform="matrix(0.21748631,0,0,0.21748631,30.407821,257.57015)"
        style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
       <g
          transform="translate(-177,-351)"
