@@ -61,23 +61,18 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    margin-left: 20px;
-    
-   
+    margin-left: 20px;  
 }
 .container__rectangle_title{
     display: flex;
     align-items: baseline;
     width: 125px;
 }
-.rectangle{
-   
-    @media all and (min-width:768px){
-        margin-left: 0px; 
-     }
-}
+
 .arrowup{
     margin-right: 20px;
+   
+   
 }
 .form__title-principal{
     margin-left: 10px; 
@@ -289,4 +284,8 @@
     .profesion_line{
         font-family: $font-family-secundary;
     }
+}
+
+.turnarrow {
+    transform: rotate(180deg);
 }

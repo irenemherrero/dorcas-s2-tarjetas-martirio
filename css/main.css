@@ -85,7 +85,7 @@ $font-size-xl-plus:     22px;
   width: 103px;
   -ms-flex-item-align: center;
   align-self: center;
-  margin: 30px 40px 20px 0;
+  margin-right: 40px;
 }
 
 .footer__img-adalab {
@@ -114,6 +114,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
+  padding-bottom: 0;
 }
 
 .icono-teclado {
@@ -129,17 +130,33 @@ body {
   font-size: 18px;
   color: #54585a;
   text-transform: uppercase;
-  display: inline-block;
+  margin: 0;
 }
 
 .contenedor-icono {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.icon__second-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  width: 125px;
+}
+
+.arrow-second {
+  width: 16px;
+  height: 18px;
+  color: #54585a;
 }
 
 .form__container {
@@ -150,6 +167,27 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.titleshare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 38px;
+}
+
+.icon__Third-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  width: 125px;
 }
 
 .form__label {
@@ -1103,6 +1141,11 @@ body {
   font-family: "Merriweather", serif;
 }
 
+.turnarrow {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 @media all and (min-width: 768px) {
   .footer {
     -webkit-box-orient: horizontal;
@@ -1112,15 +1155,16 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 
   .footer__copiright {
     margin: 20px 0 20px 41px;
   }
 
-  .form__fill {
-    padding-left: 40px;
-    padding-right: 40px;
+  .footer__link-img-adalab {
+    margin-right: 44px;
   }
 
   .logo {
@@ -1153,16 +1197,6 @@ body {
     margin-bottom: 59px;
   }
 
-  .container-izquierda {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
   .container-mediaqueries-preview {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1171,13 +1205,19 @@ body {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 
-  .rectangle {
-    margin-left: 0px;
+  .preview-container {
+    margin-right: 44px;
+  }
+
+  .container-izquierda {
+    margin-left: 40px;
+    width: 50%;
   }
 }
 

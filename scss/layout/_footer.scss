@@ -13,6 +13,7 @@
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
   }
 }
 
@@ -29,7 +30,11 @@
 .footer__link-img-adalab {
   width: 103px;
   align-self: center;
-  margin: 30px 40px 20px 0;
+  margin-right: 40px;
+  @media all and (min-width: 768px) {
+    margin-right: 44px;
+    
+  }
 }
 
 .footer__img-adalab {

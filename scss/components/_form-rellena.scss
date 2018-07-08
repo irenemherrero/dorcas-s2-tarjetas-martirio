@@ -3,6 +3,7 @@
     padding-left:20px;
     padding-right: 20px;
     margin: 0;
+    padding-bottom: 0;
 }
 
 .icono-teclado{
@@ -17,17 +18,42 @@
   font-size: $font-size-l;
   color: $color-middark;
   text-transform: uppercase;
-  display:inline-block;
+  margin: 0;
+ 
 }
 
 .contenedor-icono{
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 18px;
+
+}
+.icon__second-title {
+  display: flex;
+  align-items: baseline;
+  width: 125px;
+}
+.arrow-second{
+  width: 16px;
+  height: 18px;
+  color: $color-middark;
 }
 .form__container{
   display: flex;
   flex-direction: column;
 }
+.titleshare{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 38px;
+}
+.icon__Third-title {
+  display: flex;
+  align-items: baseline;
+  width: 125px;
+}
+
 .form__label{
   font-family: $font-family-primary;
   font-weight: $normal;
@@ -116,16 +142,6 @@
   position:absolute;
   transform:translate(-50%, -50%);
 }
-
-@media all and (min-width:768px){
-
-  .form__fill{
-    padding-left: 40px;
-    padding-right: 40px;
-
-  }
-}
-
 //BOTON CREAR Tarjetas
 .form_title3{
   font-family: $font-family-primary;

@@ -1,16 +1,21 @@
-@media all and (min-width:768px){
-    .container-izquierda{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media all and (min-width:768px){
-    .container-mediaqueries-preview{
+.container-mediaqueries-preview{
+    @media all and (min-width:768px) {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
 
+    }
+}
+.preview-container{
+    @media all and (min-width:768px) {
+       margin-right: 44px;
+    }
+}
+.container-izquierda{
+    @media all and (min-width:768px) {
+       margin-left: 40px;
+       width: 50%;
     }
 }
 
