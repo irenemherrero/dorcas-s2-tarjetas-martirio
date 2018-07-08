@@ -1,0 +1,49 @@
+
+.button {
+  border: 2px solid orange;
+  color:orange;
+  font-size:25px;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  margin-left: 174px;
+  border-radius: 50px;
+  &:focus {
+    outline-color: white;
+}
+}
+
+.buttonRemove {
+  border: 2px solid orange;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  margin-left: 4px;
+  border: 2px solid orange;
+  color:orange;
+  font-size:26px;
+  border-radius: 50px;
+  &:focus {
+    outline-color: white;
+}
+}
+.button-empty {
+  border: none;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  color:white;
+  margin-left: 58.5px;
+  &:focus {
+    outline-color: white;
+}
+}
+
+.hidden {
+  display: none;
+}
+.container {
+  margin:5px;
+  display:flex;
+  align-items: center;
+}
