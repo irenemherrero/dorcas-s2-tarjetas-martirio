@@ -97,10 +97,18 @@ $font-size-xl-plus:     22px;
   display: -ms-flexbox;
   display: flex;
   margin-left: 40px;
+  position: relative;
+}
+
+.header__link::after {
+  content: url(../../images/before.svg);
+  display: inline;
+  position: absolute;
+  left: -20px;
 }
 
 .header__img {
-  width: 201px;
+  width: 500px;
 }
 
 body {
