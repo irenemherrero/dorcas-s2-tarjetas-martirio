@@ -1,13 +1,20 @@
 .header__link {
   display: flex;
   margin-left: 40px;
+  position: relative;
+}
+.header__link::after {
+  content: url(../../images/before.svg);
+  display: inline;
+  position: absolute;
+  left: -20px;
 }
 
 .header__img {
-  width: 201px;
+  width: 500px;
 }
 
 body {
-margin: 0;
-box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }

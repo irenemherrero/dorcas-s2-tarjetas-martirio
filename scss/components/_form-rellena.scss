@@ -6,13 +6,13 @@
     padding-bottom: 0;
 }
 
-.icono-teclado{
+.icono-teclado {
   color: $color-primary;
   align-self: center;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
-.form__title{
+.form__title {
   font-family: $font-family-primary;
   font-weight: $semibold;
   font-size: $font-size-l;
@@ -22,7 +22,7 @@
  
 }
 
-.contenedor-icono{
+.contenedor-icono {
   display: flex;
   justify-content: space-between;
   margin-top: 18px;
@@ -38,7 +38,8 @@
   height: 18px;
   color: $color-middark;
 }
-.form__container{
+
+.form__container {
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +64,7 @@
   margin-bottom: 5px;
 }
 
-.form__input{
+.form__input {
   border-color: $color-secondary-lighter;
   border-style: solid;
   border-width: 1px;
@@ -75,11 +76,12 @@
   font-family: $font-family-primary;
   font-size: $font-size-m;
 }
-.form__container--imagen{
+
+.form__container--imagen {
   display: flex;
 }
 
-.boton__añadir-imagen{
+.boton__añadir-imagen {
   background-color: $color-primary;
   color: $color-ligthtone;
   text-decoration: none;
@@ -95,7 +97,7 @@
   border-radius: 3px;
 }
 
-.contenedor--imagen{
+.contenedor--imagen {
   border-color: $color-secondary-lighter;
   border-style: solid;
   border-width: 1px;
@@ -104,15 +106,18 @@
   display: inline-block;
   margin-left: 20px;
 }
-.form__container--habilidades{
+
+.form__container--habilidades {
   padding-top: 40px;
 }
-.form__container--habilidad{
+
+.form__container--habilidad {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.form__select{
+
+.form__select {
   border-color: $color-secondary-lighter;
   border-style: solid;
   border-width: 1px;
@@ -126,38 +131,42 @@
   font-family: $font-family-primary;
   font-size: $font-size-m;
 }
-.boton--sumar-restar{
+
+.boton--sumar-restar {
   height: 30px;
   width: 30px;
   border: 2px solid $color-primary;
-  border-radius:50%;
+  border-radius: 50%;
   display: inline-block;
   position: relative;
   margin-left: 20px;
 }
-.icono--signo{
+
+.icono--signo {
   color: $color-primary;
-  left:50%;
-  top:50%;
-  position:absolute;
-  transform:translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 //BOTON CREAR Tarjetas
-.form_title3{
+.form_title3 {
   font-family: $font-family-primary;
   font-weight: $semibold;
   font-size: $font-size-l;
   color: $color-middark;
   text-transform: uppercase;
-  display:inline-block;
+  display: inline-block;
   margin: 0;
 }
-.contenedor-boton{
+
+.contenedor-boton {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 .makecard {
   display: flex;
   justify-content: center;
@@ -176,27 +185,30 @@
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.rectangl2{
+
+.rectangl2 {
   width: 95%;
   height: 1px;
   background-color: #d8d8d8;
   margin-bottom: 20px;
 }
 
-.contenedor-twitter{
- border-radius: 3px;
- display: flex;
- justify-content: center;
- flex-direction: column;
- align-items: center;
+.contenedor-twitter {
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.titletarjeta{
-  color:  $color-middark;
+
+.titletarjeta {
+  color: $color-middark;
   font-size: $font-size-l;
   margin-bottom: 5px;
   font-family: $font-family-primary;
 }
-.parraphtarjeta{
+
+.parraphtarjeta {
   color: $color-primary;
   font-size: $font-size-s;
   margin-bottom: 10px;
@@ -204,7 +216,7 @@
   font-family: $font-family-primary;
 }
 
-.maketwitter{
+.maketwitter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,6 +232,7 @@
   border-radius: 3px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
-.icon_comparte{
-  color:$color-primary;
+
+.icon_comparte {
+  color: $color-primary;
 }
