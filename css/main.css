@@ -1162,7 +1162,7 @@ body {
   font-family: "Merriweather", serif;
 }
 
-.turnarrow {
+.arrow-down {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
