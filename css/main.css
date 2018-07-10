@@ -562,8 +562,17 @@ body {
   margin-bottom: 30px;
 }
 
+.container-mediaqueries-preview {
+  background-color: bisque;
+  padding: 20px;
+}
+
 .contenido-colapsable {
   display: none;
+}
+
+.preview-container {
+  border-radius: 10px;
 }
 
 .colapsable--visible .titulo-colapsable {
