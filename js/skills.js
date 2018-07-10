@@ -9,7 +9,7 @@ var selectSkills;
 var contadorClases = 1;
 var container;
 var buttonRemove;
-var button = document.getElementById('fetch');
+var button2 = document.getElementById('fetch');
 
 /////////////// FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
@@ -20,16 +20,14 @@ function searchArray() {
     })
     .then(function (json) {
 
-      for (var i = 0; i < json.skills.length; i++) {
+      arraySkills = json.skills;
 
-        arraySkills[i] = json.skills[i];
-      }
       console.log(arraySkills);
     });
 
 }
 
-button.addEventListener('click', searchArray);
+button2.addEventListener('click', searchArray);
 
 /////////////// FIN FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
@@ -52,26 +50,27 @@ function createRemoveButton() {
   buttonRemove.appendChild(insertMinus);
   container.appendChild(buttonRemove);
   buttonRemove.classList.add('buttonRemove');
+
   buttonRemove.addEventListener('click', eliminaUltimoDiv);
 
 }
 
-function cambiarTarjeta() {
-  var cont = 0;
-  var skillsSelected = document.querySelectorAll('.form__select');
-  var divABorrar = document.querySelector('.etiqueta-habilidad');
-  var previewSkills = document.querySelector('.etiquetas-habilidades-container');
+// function cambiarTarjeta() {
+//   var cont = 0;
+//   var skillsSelected = document.querySelectorAll('.form__select');
+//   var divABorrar = document.querySelector('.etiqueta-habilidad');
+//   var previewSkills = document.querySelector('.etiquetas-habilidades-container');
 
 
-  var g = document.createElement('p');
-  previewSkills.appendChild(g);
-  var h = skillsSelected[cont].value;
-  g.createTextNode(h);
-  cont++;
-  divABorrar.remove();
-  // cont++;
+//   var g = document.createElement('p');
+//   previewSkills.appendChild(g);
+//   var h = skillsSelected[cont].value;
+//   g.createTextNode(h);
+//   cont++;
+//   divABorrar.remove();
+//   // cont++;
 
-}
+// }
 
 
 
@@ -79,7 +78,6 @@ function changeSkills() {
   //creo una etiqueta select//
   selectSkills = document.createElement('select');
   selectSkills.classList.add('form__select');
-  selectSkills.setAttribute('num', contadorClases);
   container.appendChild(selectSkills);
 
   selectSkills.addEventListener('change', cambiarTarjeta);

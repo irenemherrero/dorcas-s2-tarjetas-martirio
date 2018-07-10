@@ -7,7 +7,8 @@
 		"src": [
       "js/main.js",
       "js/anyadirImagen.js",
-      "js/skills.js"
+      "js/skills.js",
+      "js/createObject.js"
 		],
 		"dest": "js/"
 	},

@@ -39,27 +39,27 @@ function saveData() {
   var catch_email = document.querySelector('#email');
 
   form_email = catch_email.value;
-  console.log(form_email);
+
 
 
   // guardo telefono //
   var catch_tfn = document.querySelector('#telefono');
 
   form_tfn = catch_tfn.value;
-  console.log(form_tfn);
+
 
 
   // guardo linkedin //
   var catch_lk = document.querySelector('#linkedin');
 
   form_lk = catch_lk.value;
-  console.log(form_lk);
+
 
   // guardo github //
   var catch_gh = document.querySelector('#github');
 
   form_gh = catch_gh.value;
-  console.log(form_gh);
+
 
   changeCard();
 }
@@ -116,16 +116,15 @@ for (var i = 0; i < tituloColapsable.length; i++) {
 //turn arrows
 var turnArrow = document.querySelectorAll('.turn-arrow');
 
-function changeArrow (event){
+function changeArrow(event) {
   var id = event.currentTarget.getAttribute('data-id');
 
   if (turnArrow[id].classList.contains('arrow-down')) {
-    turnArrow[id].classList.remove('arrow-down' );
-}
-else {
+    turnArrow[id].classList.remove('arrow-down');
+  } else {
 
-  turnArrow[id].classList.add('arrow-down');
- }
+    turnArrow[id].classList.add('arrow-down');
+  }
 }
 
 for (var i = 0; i < turnArrow.length; i++) {
@@ -199,5 +198,3 @@ function CheckStateThirdFont() {
 catchStateFirstFont.addEventListener('click', CheckStateFirstFont);
 catchStateSecondFont.addEventListener('click', CheckStateSecondFont);
 catchStateThirdFont.addEventListener('click', CheckStateThirdFont);
-
-
