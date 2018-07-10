@@ -96,13 +96,13 @@ function actualizarColapsable(event) {
   var contenedor = event.currentTarget.parentElement;
 
   if (contenedor.classList.contains('colapsable--visible')) {
-    contenedor.classList.remove('colapsable--visible');
-
-
+    contenedor.classList.remove('colapsable--visible'); 
+   
+    
   } else {
     cerrarColapsables();
     contenedor.classList.add('colapsable--visible');
-
+    
   }
 }
 
@@ -257,36 +257,3 @@ function createDiv() {
 
 createDiv();
 button.addEventListener('click', createDiv);
-
-
-
-// codigo JS del añadir imagen
-
-// No hacer caso a la línea del FileReader, como en el mago de oz con el tipo de la cortina :)
-var fr = new FileReader();
-
-// Caso a partir de aquí :)
-var uploadBtn = document.querySelector('.action__upload-btn');
-
-var fileField = document.querySelector('#img-selector');
-var profileImage = document.querySelector('.profile-image__item');
-
-function getImage(e){
-  var myFile = e.currentTarget.files[0];
-  fr.addEventListener('load', writeImage);
-  fr.readAsDataURL(myFile);
-}
-
-function writeImage() {
-  profileImage.src= fr.result;
-}
-
-function fakeFileClick() {
- fileField.click();
-}
-
-fileField.addEventListener('change', getImage);
-uploadBtn.addEventListener('click', fakeFileClick);
-
-
-// aqui acaba el codigo JS para añadir imagen
