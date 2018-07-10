@@ -398,6 +398,7 @@ $font-size-xl-plus:     22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 240px;
 }
 
 .boton__añadir-imagen {
