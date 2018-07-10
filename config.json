@@ -6,7 +6,8 @@
 	"js": {
 		"src": [
       "js/main.js",
-      "js/anyadirImagen.js"
+      "js/anyadirImagen.js",
+      "js/skills.js"
 		],
 		"dest": "js/"
 	},
