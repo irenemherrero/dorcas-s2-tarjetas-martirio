@@ -33,11 +33,19 @@ function createRemoveButton() {
 
 }
 
+function  cambiarTarjeta() {
+  var skillsSelected = document.querySelectorAll ('.form select');
+  var previewSkills = document.querySelector('.etiquetas-habilidades-container');
+  previewSkills.innerHTML=skillsSelected;
+}
+
 function changeSkills() {
   //creo una etiqueta select//
   selectSkills = document.createElement('select');
-  selectSkills.classList.add('form__select');
+  selectSkills.classList.add('form__select'+contadorClases);
   container.appendChild(selectSkills);
+
+  selectSkills.addEventListener('change', cambiarTarjeta);
 
   //bucle para rellenar el select con tantos options como colores haya en el arrayColors//
   for (var i = 0; i < arraySkills.length; i++) {

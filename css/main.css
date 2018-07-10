@@ -703,8 +703,6 @@ body {
 }
 
 .photo-container {
-  height: 240px;
-  width: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
