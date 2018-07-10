@@ -85,9 +85,7 @@ inputNombre.addEventListener("keyup", writeData);
 inputPuesto.addEventListener("keyup", writeData);
 
 //a parte de esto, modificar los data-id de los input y los id de los campos del preview de nombre y puesto
-var arrow = document.querySelector('.arrow-turn1');
-var arrowSecond = document.querySelector('.arrow-turn2');
-var arrowThird = document.querySelector('.arrow-turn3');
+
 var colapsables = document.querySelectorAll('.colapsable');
 
 var tituloColapsable = document.querySelectorAll('.titulo-colapsable');
@@ -114,6 +112,24 @@ function cerrarColapsables() {
 
 for (var i = 0; i < tituloColapsable.length; i++) {
   tituloColapsable[i].addEventListener('click', actualizarColapsable);
+}
+//turn arrows
+var turnArrow = document.querySelectorAll('.turn-arrow');
+
+function changeArrow (event){
+  var id = event.currentTarget.getAttribute('data-id');
+  
+  if (turnArrow[id].classList.contains('arrow-down')) {
+    turnArrow[id].classList.remove('arrow-down' ); 
+}
+else {
+ 
+  turnArrow[id].classList.add('arrow-down');  
+ }
+}
+
+for (var i = 0; i < turnArrow.length; i++) {
+  turnArrow[i].addEventListener('click', changeArrow);
 }
 //color radio buttom\
 var preview = document.querySelector('.preview');
