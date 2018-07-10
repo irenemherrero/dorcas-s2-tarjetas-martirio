@@ -704,6 +704,15 @@ body {
 
 .photo-container {
   height: 200px;
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.changeImagePreview {
+  width: 100%;
+  display: block;
 }
 
 .footer-preview__container {
