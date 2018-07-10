@@ -3,12 +3,10 @@
 }
 
 body {
-  margin:0;
+  margin: 0;
 }
 
-.allboxes{
-  width: 100vw;
-  height: 100vh;
+.allboxes {
   margin-left: auto;
   margin-right: auto;
   background-color: $color-background;
@@ -22,14 +20,14 @@ body {
   padding: 0 28px;
 }
 
-.logo{
+.logo {
   margin-top: 94px;
   margin-bottom: 36px;
   width: 250px;
   height: 64px;
 }
 
-.maintitle{
+.maintitle {
   font-size: $font-size-l;
   color: $color-primary;
   font-family: $font-family-secundary;
@@ -37,7 +35,7 @@ body {
   margin-top: 0;
 }
 
-.parraph1{
+.parraph1 {
   font-family: $font-family-primary;
   width: 268px;
   font-weight: normal;
@@ -62,7 +60,7 @@ body {
   padding: 15px 20px 10px 20px;
 }
 
-.minibox{
+.minibox {
   color: $color-primary;
   display: flex;
   justify-content: center;
@@ -97,33 +95,30 @@ body {
   margin-bottom: 30px;
 }
 
-@media all and (min-width:768px){
-
-  .logo{
+@media all and (min-width:768px) {
+  .logo {
     margin-top: 348px;
     margin-bottom: 31px;
     width: 410px;
     height: 107px;
   }
-  .maintitle{
+  .maintitle {
     font-size: $font-size-xxl;
     margin-bottom: 4px;
     margin-top: 0;
   }
-  .parraph1{
+  .parraph1 {
     width: 331px;
     height: 48px;
     font-size: 16px;
     margin-bottom: 21px;
   }
-  .iconbox{
+  .iconbox {
     width: 325px;
     height: 86px;
   }
   .startbutt {
     margin-top: 186px;
     margin-bottom: 59px;
-
   }
-
 }
