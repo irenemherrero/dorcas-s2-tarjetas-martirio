@@ -773,11 +773,12 @@ body {
   background-color: #438792;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   margin-top: 0;
   margin-right: 10px;
   text-align: center;
+  list-style: none;
 }
 
 .preview-green-lighter {

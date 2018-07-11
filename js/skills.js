@@ -1,7 +1,7 @@
 'use strict';
 
 /// CODIGO SKILLS //
-
+var tagsContainer = document.querySelector('.etiquetas-habilidades-container');
 var button = document.querySelector('.button');
 var divMadre = document.getElementById('mama');
 var arraySkills = [];
@@ -9,8 +9,7 @@ var selectSkills;
 var contadorClases = 1;
 var container;
 var buttonRemove;
-var button = document.getElementById('fetch');
-
+var optionAsPlaceholderText = 'Elige habilidad';
 /////////////// FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
 function searchArray() {
@@ -20,18 +19,18 @@ function searchArray() {
     })
     .then(function (json) {
 
-      for (var i = 0; i < json.skills.length; i++) {
-
-        arraySkills[i] = json.skills[i];
-      }
+      arraySkills = json.skills;
+      arraySkills.push(optionAsPlaceholderText);
+      arraySkills.reverse();
       console.log(arraySkills);
     });
-
 }
 
-button.addEventListener('click', searchArray);
 
 /////////////// FIN FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//// CODIGO SKILLS //
 
 function eliminaUltimoDiv() {
 
@@ -40,49 +39,28 @@ function eliminaUltimoDiv() {
     k.parentElement.removeChild(k);
     button.classList.remove('hidden'); //Quita la clase Hidden si hay menos de 3 opciones para que aparezca el +
     contadorClases--;
+
+    updateTagList();
   } else {
-    alert('Tiene que introducir alguna habilidad');
+    alert("Tiene que introducir alguna habilidad");
   }
 }
 
 function createRemoveButton() {
   buttonRemove = document.createElement('button');
-  buttonRemove.setAttribute('type', 'button');
+  buttonRemove.setAttribute("type", "button");
   var insertMinus = document.createTextNode('-');
   buttonRemove.appendChild(insertMinus);
   container.appendChild(buttonRemove);
   buttonRemove.classList.add('buttonRemove');
   buttonRemove.addEventListener('click', eliminaUltimoDiv);
-
 }
-
-function cambiarTarjeta() {
-  var cont = 0;
-  var skillsSelected = document.querySelectorAll('.form__select');
-  var divABorrar = document.querySelector('.etiqueta-habilidad');
-  var previewSkills = document.querySelector('.etiquetas-habilidades-container');
-
-
-  var g = document.createElement('p');
-  previewSkills.appendChild(g);
-  var h = skillsSelected[cont].value;
-  g.createTextNode(h);
-  cont++;
-  divABorrar.remove();
-  // cont++;
-
-}
-
-
 
 function changeSkills() {
   //creo una etiqueta select//
   selectSkills = document.createElement('select');
-  selectSkills.classList.add('form__select');
-  selectSkills.setAttribute('num', contadorClases);
+  selectSkills.classList.add("form__select");
   container.appendChild(selectSkills);
-
-  selectSkills.addEventListener('change', cambiarTarjeta);
 
   //bucle para rellenar el select con tantos options como colores haya en el arrayColors//
   for (var i = 0; i < arraySkills.length; i++) {
@@ -94,6 +72,7 @@ function changeSkills() {
     option.appendChild(insertSkillToOption);
     // metemoslos options dentro de los select//
     selectSkills.appendChild(option);
+    selectSkills.addEventListener('change', updateTagList);
   }
 }
 
@@ -113,13 +92,30 @@ function createDiv() {
     container = document.createElement('div');
     container.classList.add('container');
     divMadre.appendChild(container);
+
     changeSkills();
     createRemoveButton();
+
     contadorClases++;
   } else {
-    alert('Tiene que introducir al menos una habilidad');
+    alert("Tiene que introducir alguna habilidad");
   }
 }
-searchArray();
 
+searchArray();
 button.addEventListener('click', createDiv);
+
+////////////// AÑADIR A LA TARJETA ///////////////////
+
+function updateTagList() {
+  var currentListOfSelects = document.querySelectorAll('.form__select');
+
+  tagsContainer.innerHTML = ''; //limpio los skills del preview
+
+  for (var i = 0; i < currentListOfSelects.length; i++) {
+    var currentSelect = currentListOfSelects[i];
+    if (currentSelect.value !== optionAsPlaceholderText) {
+      tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
+    }
+  }
+}
