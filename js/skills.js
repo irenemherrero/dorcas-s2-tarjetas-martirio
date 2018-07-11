@@ -9,7 +9,6 @@ var selectSkills;
 var contadorClases = 1;
 var container;
 var buttonRemove;
-var button2 = document.getElementById('fetch');
 
 /////////////// FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
@@ -27,9 +26,11 @@ function searchArray() {
 
 }
 
-button2.addEventListener('click', searchArray);
 
 /////////////// FIN FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//// CODIGO SKILLS //
 
 function eliminaUltimoDiv() {
 
@@ -38,49 +39,27 @@ function eliminaUltimoDiv() {
     k.parentElement.removeChild(k);
     button.classList.remove('hidden'); //Quita la clase Hidden si hay menos de 3 opciones para que aparezca el +
     contadorClases--;
-  } else {
-    alert('Tiene que introducir alguna habilidad');
+  }else {
+    alert ("Tiene que introducir alguna habilidad");
   }
 }
 
 function createRemoveButton() {
   buttonRemove = document.createElement('button');
-  buttonRemove.setAttribute('type', 'button');
+  buttonRemove.setAttribute("type","button");
   var insertMinus = document.createTextNode('-');
   buttonRemove.appendChild(insertMinus);
   container.appendChild(buttonRemove);
   buttonRemove.classList.add('buttonRemove');
-
   buttonRemove.addEventListener('click', eliminaUltimoDiv);
 
 }
 
-// function cambiarTarjeta() {
-//   var cont = 0;
-//   var skillsSelected = document.querySelectorAll('.form__select');
-//   var divABorrar = document.querySelector('.etiqueta-habilidad');
-//   var previewSkills = document.querySelector('.etiquetas-habilidades-container');
-
-
-//   var g = document.createElement('p');
-//   previewSkills.appendChild(g);
-//   var h = skillsSelected[cont].value;
-//   g.createTextNode(h);
-//   cont++;
-//   divABorrar.remove();
-//   // cont++;
-
-// }
-
-
-
 function changeSkills() {
   //creo una etiqueta select//
   selectSkills = document.createElement('select');
-  selectSkills.classList.add('form__select');
+  selectSkills.classList.add("form__select");
   container.appendChild(selectSkills);
-
-  selectSkills.addEventListener('change', cambiarTarjeta);
 
   //bucle para rellenar el select con tantos options como colores haya en el arrayColors//
   for (var i = 0; i < arraySkills.length; i++) {
@@ -114,10 +93,11 @@ function createDiv() {
     changeSkills();
     createRemoveButton();
     contadorClases++;
-  } else {
-    alert('Tiene que introducir al menos una habilidad');
+  }else {
+    alert ("Tiene que introducir alguna habilidad");
   }
 }
+
 searchArray();
 
 button.addEventListener('click', createDiv);
