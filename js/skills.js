@@ -9,7 +9,7 @@ var selectSkills;
 var contadorClases = 1;
 var container;
 var buttonRemove;
-var optionAsPlaceholderText= 'Elige habilidad';
+var optionAsPlaceholderText = 'Elige habilidad';
 /////////////// FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
 function searchArray() {
@@ -24,9 +24,6 @@ function searchArray() {
       arraySkills.reverse();
       console.log(arraySkills);
     });
-
-
-
 }
 
 
@@ -80,7 +77,7 @@ function changeSkills() {
 }
 
 function createDiv() {
-  tagsContainer.innerHTML = '';
+
   if (contadorClases < 3) {
     //creo un div//
     container = document.createElement('div');
@@ -111,16 +108,13 @@ button.addEventListener('click', createDiv);
 ////////////// AÑADIR A LA TARJETA ///////////////////
 
 function updateTagList() {
-  // Asigna a la variable currentListOfSelects un array con los elementos que tienen la clase ingredients__select en este momento
   var currentListOfSelects = document.querySelectorAll('.form__select');
 
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
   for (var i = 0; i < currentListOfSelects.length; i++) {
-    // Asigna a la variable currentSelect el select del array currentListOfSelects correspondiente a esta vuelta del for
     var currentSelect = currentListOfSelects[i];
-    // Si currentSelect no tiene seleccionada la opción que hace de placeholder, añade un nuevo li al listado de tags
-    if(currentSelect.value !== optionAsPlaceholderText) {
+    if (currentSelect.value !== optionAsPlaceholderText) {
       tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
     }
   }
