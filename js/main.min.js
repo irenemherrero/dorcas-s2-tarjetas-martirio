@@ -87,50 +87,28 @@ inputPuesto.addEventListener("keyup", writeData);
 //a parte de esto, modificar los data-id de los input y los id de los campos del preview de nombre y puesto
 
 var colapsables = document.querySelectorAll('.colapsable');
-
 var tituloColapsable = document.querySelectorAll('.titulo-colapsable');
 
 function actualizarColapsable(event) {
+  //cogemos todas flechas, esto nos devuelve el grupo de flechas como un array
+  var turnArrow = document.querySelectorAll('.turn-arrow');
   var contenedor = event.currentTarget.parentElement;
-
+  //en el html ponemos un data-donde a todos los elementos suceptibles de ser clikados, y recogemos el valor del data donde. los valores del data donde van a hacer match con los valores del array
+  var clikedID = contenedor.getAttribute('data-donde');
   if (contenedor.classList.contains('colapsable--visible')) {
     contenedor.classList.remove('colapsable--visible');
-
-
+    turnArrow[clikedID].classList.remove('arrow-down');
   } else {
-    cerrarColapsables();
     contenedor.classList.add('colapsable--visible');
-
+    turnArrow[clikedID].classList.add('arrow-down');
+    }
   }
-}
-
-function cerrarColapsables() {
-  for (var i = 0; i < colapsables.length; i++) {
-    colapsables[i].classList.remove('colapsable--visible');
-  }
-}
-
+//cogemos la flecha cuya posicion en el array sea igual al data-donde del elemento clikado y le quitamos y le ponemos la clase que la hace girar.
 for (var i = 0; i < tituloColapsable.length; i++) {
   tituloColapsable[i].addEventListener('click', actualizarColapsable);
 }
-//turn arrows
-var turnArrow = document.querySelectorAll('.turn-arrow');
 
-function changeArrow(event) {
-  var id = event.currentTarget.getAttribute('data-id');
-
-  if (turnArrow[id].classList.contains('arrow-down')) {
-    turnArrow[id].classList.remove('arrow-down');
-  } else {
-
-    turnArrow[id].classList.add('arrow-down');
-  }
-}
-
-for (var i = 0; i < turnArrow.length; i++) {
-  turnArrow[i].addEventListener('click', changeArrow);
-}
-// radio buttom\
+//color radio buttom\
 var preview = document.querySelector('.preview');
 var colorsP = document.querySelectorAll('.radio-color');
 //una clase -try- para dominarlos a todos
