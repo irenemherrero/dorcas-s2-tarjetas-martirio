@@ -22,7 +22,6 @@ function searchArray() {
       arraySkills = json.skills;
       arraySkills.push(optionAsPlaceholderText);
       arraySkills.reverse();
-      console.log(arraySkills);
     });
 }
 
@@ -98,7 +97,7 @@ function createDiv() {
 
     contadorClases++;
   } else {
-    alert("Tiene que introducir alguna habilidad");
+    alert('Tiene que introducir alguna habilidad');
   }
 }
 
@@ -106,6 +105,7 @@ searchArray();
 button.addEventListener('click', createDiv);
 
 ////////////// AÑADIR A LA TARJETA ///////////////////
+
 
 function updateTagList() {
   var currentListOfSelects = document.querySelectorAll('.form__select');
@@ -115,6 +115,7 @@ function updateTagList() {
   for (var i = 0; i < currentListOfSelects.length; i++) {
     var currentSelect = currentListOfSelects[i];
     if (currentSelect.value !== optionAsPlaceholderText) {
+
       tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
     }
   }
