@@ -10,6 +10,7 @@ var contadorClases = 1;
 var container;
 var buttonRemove;
 var optionAsPlaceholderText = 'Elige habilidad';
+var currentListOfSelects;
 /////////////// FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
 function searchArray() {
@@ -58,6 +59,7 @@ function createRemoveButton() {
 function changeSkills() {
   //creo una etiqueta select//
   selectSkills = document.createElement('select');
+  selectSkills.setAttribute('name', 'hola');
   selectSkills.classList.add("form__select");
   container.appendChild(selectSkills);
 
@@ -108,15 +110,84 @@ button.addEventListener('click', createDiv);
 
 
 function updateTagList() {
-  var currentListOfSelects = document.querySelectorAll('.form__select');
-
+  currentListOfSelects = document.querySelectorAll('.form__select');
+  console.log(currentListOfSelects);
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
   for (var i = 0; i < currentListOfSelects.length; i++) {
     var currentSelect = currentListOfSelects[i];
     if (currentSelect.value !== optionAsPlaceholderText) {
-
       tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
     }
+  }
+  console.log(currentListOfSelects);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+////////// ENVIO AL SERVIDOR /////////////////////////////////////////////////////////
+
+var submitButton = document.querySelector('#submit');
+var responseURL = document.querySelector('.response');
+var form = document.querySelector('form');
+var fr = new FileReader();
+
+submitButton.addEventListener('click', loadPhoto);
+
+function sendData() {
+  var inputs = Array.from(form.elements);
+  var json = getJSONFromInputs(inputs);
+  json.skills = [];
+  console.log(json);
+  for (var i = 0; i < currentListOfSelects.length; i++) {
+
+    json.skills.push(currentListOfSelects[i].value);
+  }
+
+  json.photo = fr.result;
+  sendRequest(json);
+}
+
+function loadPhoto() {
+
+  var myFile = document.querySelector('#img-selector').files[0];
+  fr.addEventListener('load', sendData);
+  fr.readAsDataURL(myFile);
+}
+
+function getJSONFromInputs(inputs) {
+  return inputs.reduce(function (acc, val) {
+    if (val.nodeName !== 'BUTTON' && val.nodeName !== 'FIELDSET') {
+      acc[val.name] = val.value;
+    }
+    return acc;
+  }, {});
+}
+
+
+function sendRequest(json) {
+  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+      method: 'POST',
+      body: JSON.stringify(json),
+      headers: {
+        'content-type': 'application/json'
+      },
+    })
+    .then(function (resp) {
+      return resp.json();
+    })
+    .then(function (result) {
+      showURL(result);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+
+function showURL(result) {
+  if (result.success) {
+    responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
+  } else {
+    responseURL.innerHTML = 'ERROR:' + result.error;
   }
 }
