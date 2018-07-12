@@ -149,7 +149,7 @@ function CheckStateSecondColor() {
   var state = catchStateSecondColor.checked;
   if (state === true) {
     preview.classList.remove('greenTarget', 'greyTarget');
-    preview.classList.add(catchStateSecondColor.value);
+    preview.classList.add('redTarget');
   }
 }
 
@@ -198,3 +198,10 @@ function CheckStateThirdFont() {
 catchStateFirstFont.addEventListener('click', CheckStateFirstFont);
 catchStateSecondFont.addEventListener('click', CheckStateSecondFont);
 catchStateThirdFont.addEventListener('click', CheckStateThirdFont);
+
+
+
+
+
+
+

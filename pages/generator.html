@@ -90,7 +90,7 @@
                 <legend class="form__subtitle">COLORES</legend>
                 <div class="container__input__labels">
                   <label class="container_input_div" for="form__subtitle__first-color">
-                    <input class="clikable" id="form__subtitle__first-color" type="radio" value="1" name="palette" checked="checked" />
+                    <input class="clikable" id="form__subtitle__first-color" type="radio" value="1" name="palette" checked>
                     <span class="checkmark"></span>
                     <div class="container__square">
                       <div class="first-color__square1"></div>
@@ -99,7 +99,7 @@
                     </div>
                   </label>
                   <label class="container_input_div" for="form__subtitle__second-color">
-                    <input class="clikable" id="form__subtitle__second-color" type="radio" value="2" name="palette" checked="checked" />
+                    <input class="clikable" id="form__subtitle__second-color" type="radio" value="2" name="palette">
                     <span class="checkmark"></span>
                     <div class="container__square">
                       <div class="second-color__square1"></div>
@@ -108,7 +108,7 @@
                     </div>
                   </label>
                   <label class="container_input_div" for="form__subtitle__third-color">
-                    <input class="clikable " id="form__subtitle__third-color" type="radio" value="3" name="palette" checked="checked" />
+                    <input class="clikable " id="form__subtitle__third-color" type="radio" value="3" name="palette">
                     <span class="checkmark"></span>
                     <div class="container__square group-square2">
                       <div class="third-color__square1"></div>
@@ -125,22 +125,21 @@
                   <legend class="form__subtitle">FUENTES</legend>
                   <div class="container__input__labels">
                     <label class="font1 container_input_font container_input_div" for="form__subtitle__first-font">
-                      <input class="clikable" id="form__subtitle__first-font" type="radio" value="1" name="typography" checked="checked" />
+                      <input class="clikable" id="form__subtitle__first-font" type="radio" value="1" name="typography">
                       <span class="checkmark"></span>
                       <div class="container__font">
                         Ubuntu
                       </div>
                     </label>
                     <label class="font2 container_input_font container_input_div" for="form__subtitle__second-font">
-                      <input class="clikable" id="form__subtitle__second-font" type="radio" value="2" name="typography" checked="checked"
-                      />
+                      <input class="clikable" id="form__subtitle__second-font" type="radio" value="2" name="typography" checked>
                       <span class="checkmark"></span>
                       <div class="container__font">
                         Comic Sans
                       </div>
                     </label>
                     <label class="font3 container_input_div" for="form__subtitle__third-font">
-                      <input class="clikable" id="form__subtitle__third-font" type="radio" value="3" name="typography" checked="checked" />
+                      <input class="clikable" id="form__subtitle__third-font" type="radio" value="3" name="typography">
                       <span class="checkmark"></span>
                       <div class="container__font">
                         Montserrat
@@ -171,10 +170,9 @@
             <div class="form__container">
               <!-- Campos JS -->
               <label class="form__label" for="nombre">Nombre completo</label>
-              <input class="form__input form__input--nombre" id="nombre" type="text" name="name" placeholder="Ej. Juanita Reina" data-donde="element-nombre">
+              <input class="form__input form__input--nombre" id="nombre" type="text" name="name" placeholder="Ej. Juanita Reina" maxlength="19" data-donde="element-nombre">
               <label class="form__label" for="puesto">Puesto</label>
-              <input class="form__input form__input--puesto" id="puesto" type="text" name="job" placeholder="Ej. Reina de la canción"
-                data-donde="element-puesto">
+              <input class="form__input form__input--puesto" id="puesto" type="text" name="job" placeholder="Ej. Reina de la canción" maxlength="22" data-donde="element-puesto">
 
               <label class="form__label">Imagen de perfil</label>
               <div class="form__container--imagen">
@@ -192,9 +190,9 @@
               <input class="form__input" id="email" type="mail" name="email" placeholder="Ej. reinadelacopla@ole.es">
 
               <label class="form__label" for="telefono">Teléfono</label>
-              <input class="form__input" id="telefono" type="text" name="phone" placeholder="Ej. 982938437">
+              <input class="form__input" id="telefono" type="number" name="phone" placeholder="Ej. 982938437">
               <label class="form__label" for="linkedin">Linkedin</label>
-              <input class="form__input" id="linkedin" type="text" name="linkedin" placeholder="Ej.juanita.reina">
+              <input class="form__input" id="linkedin" type="text" name="linkedin" placeholder="Ej. juanita.reina">
               <label class="form__label" for="github">Github</label>
               <input class="form__input" id="github" type="text" name="github" placeholder="Ej. juanita-reina">
               <div class="form__container--habilidades">
@@ -207,7 +205,9 @@
             <!-- SKILLS -->
             <div class="form__container--habilidad">
               <div id="mama">
-                <button type="button" id="fetch" class="button">+</button>
+                <button type="button" id="fetch" class="button">
+                  <div class="content-button-habilities"> + </div>
+                </button>
               </div>
               <!-- SKILLS -->
 
@@ -220,7 +220,7 @@
 
         <fieldset  class="form__fill">
           <div class="titleshare titulo-colapsable">
-            <div class="icon__Third-title">
+            <div class="icon__Third-title container__rectangle_title">
               <i class="icono-teclado fas fa-share-alt"></i>
               <h1 class="form_title3 titulo-colapsable">Comparte</h1>
             </div>
