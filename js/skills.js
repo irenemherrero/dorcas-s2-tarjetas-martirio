@@ -49,7 +49,10 @@ function eliminaUltimoDiv() {
 function createRemoveButton() {
   buttonRemove = document.createElement('button');
   buttonRemove.setAttribute("type", "button");
-  var insertMinus = document.createTextNode('-');
+  var insertMinus = document.createElement("div");
+  insertMinus.classList.add("content-button-habilities");
+  var minus = document.createTextNode("-");
+  insertMinus.appendChild(minus);
   buttonRemove.appendChild(insertMinus);
   container.appendChild(buttonRemove);
   buttonRemove.classList.add('buttonRemove');

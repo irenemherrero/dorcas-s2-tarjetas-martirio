@@ -120,6 +120,10 @@ $font-size-xl-plus:     22px;
   padding-bottom: 0;
 }
 
+.container__rectangle_title {
+  cursor: pointer;
+}
+
 .icono-teclado {
   color: #e17334;
   -ms-flex-item-align: center;
@@ -160,6 +164,7 @@ $font-size-xl-plus:     22px;
   width: 16px;
   height: 18px;
   color: #54585a;
+  cursor: pointer;
 }
 
 .form__container {
@@ -564,7 +569,6 @@ body {
 }
 
 .container-mediaqueries-preview {
-  background-color: bisque;
   padding: 20px;
 }
 
@@ -608,6 +612,7 @@ body {
 }
 
 .button-reset__container {
+  margin-top: 20px;
   width: 75px;
   height: 30px;
   border: 1px solid #fff;
@@ -712,6 +717,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 240px;
+  height: 196px;
 }
 
 .changeImagePreview {
@@ -764,7 +771,7 @@ body {
 }
 
 .etiqueta-habilidad {
-  width: 46px;
+  width: 65px;
   height: 18px;
   border-radius: 4px;
   background-color: #438792;
@@ -866,7 +873,7 @@ body {
 }
 
 .clikable:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #bd1010;
   opacity: 1;
 }
 
@@ -910,10 +917,6 @@ body {
   -ms-flex-align: baseline;
   align-items: baseline;
   width: 125px;
-}
-
-.arrowup {
-  margin-right: 20px;
 }
 
 .form__title-principal {
@@ -1180,10 +1183,19 @@ body {
   background-color: white;
   margin-left: 174px;
   border-radius: 50px;
+  position: relative;
 }
 
 .button:focus {
   outline-color: white;
+}
+
+.content-button-habilities {
+  left: 50%;
+  top: 42%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .buttonRemove {
@@ -1196,6 +1208,7 @@ body {
   color: orange;
   font-size: 26px;
   border-radius: 50px;
+  position: relative;
 }
 
 .buttonRemove:focus {
@@ -1295,12 +1308,41 @@ body {
   }
 
   .preview-container {
-    margin-right: 44px;
+    margin-right: 20px;
+    width: auto;
   }
 
   .container-izquierda {
     margin-left: 40px;
     width: 50%;
+  }
+
+  .mediaqueries-preview {
+    width: 329px;
+    min-height: 460px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .preview-container {
+    width: 329px;
+    min-height: 460px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .preview-container {
+    width: 400px;
+    margin-left: 200px;
+    margin-right: auto;
+  }
+
+  .preview {
+    margin-left: 35px;
   }
 }
 
