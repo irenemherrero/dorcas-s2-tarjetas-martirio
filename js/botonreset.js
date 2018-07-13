@@ -4,10 +4,10 @@ var botonReset = document.querySelector(".button-reset__title");
 
 function callLocalStore() {
     var objetoReset = JSON.parse(localStorage.getItem("objeto-reset"));
-    console.log(objetoReset);
     for(var i in objetoReset){
-        var classReset= document.querySelector(".local--" + i);
-    if(classReset === ".local--photo"){
+       var classReset= document.querySelector(".local--" + i);
+       console.log(" maria check", classReset);
+    if(classReset.classList.contains('local--photo')){
         classReset.src = objetoReset[i];
     }
     else {
