@@ -595,8 +595,7 @@ body {
 
 .preview-container {
   border: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
-  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background-image: url(../images/fondo-dots2.svg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,6 +617,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: lightgrey;
 }
 
 .icono-basura {
