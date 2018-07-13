@@ -24,12 +24,22 @@ function loadPhoto() {
   fr.readAsDataURL(myFile);
 }
 
-function getJSONFromInputs(inputs) {
+// function getJSONFromInputs(inputs) {
+//   return inputs.reduce(function (acc, val) {
+//     if (val.nodeName !== 'BUTTON' || val.nodeName !== 'FIELDSET') {
+//       acc[val.name] = val.value;
+//     }
+//     return acc;
+//   }, {});
+// }
+
+function getJSONFromInputs(inputs){
   return inputs.reduce(function (acc, val) {
-    if (val.nodeName !== 'BUTTON')
+    if(val.nodeName !== 'BUTTON')
       acc[val.name] = val.value;
+      console.log(val.nodeName);
     return acc;
-  }, {});
+  }, {})
 }
 
 // function sendRequest(json) {

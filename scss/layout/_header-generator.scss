@@ -4,8 +4,9 @@
   position: relative;
 }
 .header__link::after {
-  content: url(../../images/before.svg);
+  content: '';
   display: inline;
+  width: 200px;
   position: absolute;
   left: -20px;
 }

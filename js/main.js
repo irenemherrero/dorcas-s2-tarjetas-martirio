@@ -86,122 +86,71 @@ inputPuesto.addEventListener("keyup", writeData);
 
 //a parte de esto, modificar los data-id de los input y los id de los campos del preview de nombre y puesto
 
-var colapsables = document.querySelectorAll('.colapsable');
-
-var tituloColapsable = document.querySelectorAll('.titulo-colapsable');
-
-function actualizarColapsable(event) {
-  var contenedor = event.currentTarget.parentElement;
-
-  if (contenedor.classList.contains('colapsable--visible')) {
-    contenedor.classList.remove('colapsable--visible');
+var colapsables = document.querySelectorAll('.form__fill');
+var tituloColapsable = document.querySelectorAll('.colapsable-titulo');
 
 
-  } else {
-    cerrarColapsables();
-    contenedor.classList.add('colapsable--visible');
-
-  }
-}
-
-function cerrarColapsables() {
-  for (var i = 0; i < colapsables.length; i++) {
+function cerrarOtrosColapsables(){
+  for(var i = 0; i < colapsables.length; i++){
     colapsables[i].classList.remove('colapsable--visible');
   }
 }
-
+function actualizarColapsable(event) {
+  //cogemos todas flechas, esto nos devuelve el grupo de flechas como un array
+  var turnArrow = document.querySelectorAll('.turn-arrow');
+  var contenedor = event.currentTarget.parentElement;
+  //en el html ponemos un data-donde a todos los elementos suceptibles de ser clikados, y recogemos el valor del data donde. los valores del data donde van a hacer match con los valores del array
+  var clikedID = contenedor.getAttribute('data-donde');
+  if (contenedor.classList.contains('colapsable--visible')) {
+    contenedor.classList.remove('colapsable--visible');
+    turnArrow[clikedID].classList.remove('arrow-down');
+  } else {
+    cerrarOtrosColapsables();
+    contenedor.classList.add('colapsable--visible');
+    turnArrow[clikedID].classList.add('arrow-down');
+    }
+  }
+//cogemos la flecha cuya posicion en el array sea igual al data-donde del elemento clikado y le quitamos y le ponemos la clase que la hace girar.
 for (var i = 0; i < tituloColapsable.length; i++) {
   tituloColapsable[i].addEventListener('click', actualizarColapsable);
 }
-//turn arrows
-var turnArrow = document.querySelectorAll('.turn-arrow');
 
-function changeArrow(event) {
-  var id = event.currentTarget.getAttribute('data-id');
-
-  if (turnArrow[id].classList.contains('arrow-down')) {
-    turnArrow[id].classList.remove('arrow-down');
-  } else {
-
-    turnArrow[id].classList.add('arrow-down');
-  }
-}
-
-for (var i = 0; i < turnArrow.length; i++) {
-  turnArrow[i].addEventListener('click', changeArrow);
-}
 //color radio buttom\
 var preview = document.querySelector('.preview');
-var stateColor;
-var catchStateFirstColor = document.querySelector('#form__subtitle__first-color');
-var catchStateSecondColor = document.querySelector('#form__subtitle__second-color');
-var catchStateThirdColor = document.querySelector('#form__subtitle__third-color');
+var colorsP = document.querySelectorAll('.radio-color');
+//una clase -try- para dominarlos a todos
 
-function CheckStateFirstColor() {
-  var state = catchStateFirstColor.checked;
+function changeColors (event){
+  var guiltyElement = event.currentTarget;
+  var state = guiltyElement.checked;
+  var targetID = guiltyElement.getAttribute('data-donde');
   if (state === true) {
-    preview.classList.remove('redTarget', 'greyTarget');
-    preview.classList.add('greenTarget');
+    preview.classList.remove('greenTarget', 'greyTarget','redTarget');
+    preview.classList.add(targetID);
   }
+ 
 }
-
-function CheckStateSecondColor() {
-  var state = catchStateSecondColor.checked;
-  if (state === true) {
-    preview.classList.remove('greenTarget', 'greyTarget');
-    preview.classList.add('redTarget');
-  }
+for (var i = 0; i < colorsP.length; i++) {
+  colorsP[i].addEventListener('click', changeColors);
 }
-
-function CheckStateThirdColor() {
-  var state = catchStateThirdColor.checked;
-  if (state === true) {
-    preview.classList.remove('redTarget', 'greyTarget');
-    preview.classList.add('greyTarget');
-  }
-}
-catchStateFirstColor.addEventListener('click', CheckStateFirstColor);
-catchStateSecondColor.addEventListener('click', CheckStateSecondColor);
-catchStateThirdColor.addEventListener('click', CheckStateThirdColor);
 
 //font radio buttom
 
 var state;
-var catchStateFirstFont = document.querySelector('#form__subtitle__first-font');
-var catchStateSecondFont = document.querySelector('#form__subtitle__second-font');
-var catchStateThirdFont = document.querySelector('#form__subtitle__third-font');
-
-function CheckStateFirstFont() {
-  var state = catchStateFirstFont.checked;
+var fontsP = document.querySelectorAll('.radio-font');
+//una clase -radio-font- para dominarlos a todos
+function changeFonts (event){
+  var guiltyElement = event.currentTarget;
+  var state = guiltyElement.checked;
+  var targetID = guiltyElement.getAttribute('data-donde');
   if (state === true) {
-    preview.classList.remove('comicFont', 'montFont');
-    preview.classList.add('ubuntuFont');
+    preview.classList.remove('comicFont', 'montFont','ubuntuFont');
+    preview.classList.add(targetID);
   }
+ 
 }
-
-function CheckStateSecondFont() {
-  var state = catchStateSecondFont.checked;
-  if (state === true) {
-    preview.classList.remove('ubuntuFont', 'montFont');
-    preview.classList.add('comicFont');
-  }
+for (var i = 0; i < fontsP.length; i++) {
+  fontsP[i].addEventListener('click', changeFonts );
 }
-
-function CheckStateThirdFont() {
-  var state = catchStateThirdFont.checked;
-  if (state === true) {
-    preview.classList.remove('comicFont', 'ubuntuFont');
-    preview.classList.add('montFont');
-  }
-}
-
-catchStateFirstFont.addEventListener('click', CheckStateFirstFont);
-catchStateSecondFont.addEventListener('click', CheckStateSecondFont);
-catchStateThirdFont.addEventListener('click', CheckStateThirdFont);
-
-
-
-
-
 
 
