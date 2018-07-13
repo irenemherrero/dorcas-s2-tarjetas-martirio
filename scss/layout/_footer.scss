@@ -10,7 +10,7 @@
   font-family: $font-family-primary;
   font-size: $font-size-m;
 
-  &::after {
+
 
   @media all and (min-width: 768px) {
     flex-direction: row;
@@ -33,6 +33,7 @@
   width: 103px;
   align-self: center;
   margin-right: 40px;
+
   @media all and (min-width: 768px) {
     margin-right: 44px;
 

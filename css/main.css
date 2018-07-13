@@ -74,14 +74,6 @@ $font-size-xl-plus:     22px;
   font-size: 14px;
 }
 
-.footer::after {
-  content: '';
-  background-image: url("../../images/pntilla.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 1200px;
-}
-
 .footer__copiright {
   -ms-flex-item-align: center;
   align-self: center;
