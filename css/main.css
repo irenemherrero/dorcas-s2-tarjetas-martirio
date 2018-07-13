@@ -164,6 +164,7 @@ $font-size-xl-plus:     22px;
   width: 16px;
   height: 18px;
   color: #54585a;
+  cursor: pointer;
 }
 
 .form__container {
@@ -916,10 +917,6 @@ body {
   -ms-flex-align: baseline;
   align-items: baseline;
   width: 125px;
-}
-
-.arrowup {
-  margin-right: 20px;
 }
 
 .form__title-principal {
