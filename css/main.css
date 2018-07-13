@@ -1339,10 +1339,6 @@ body {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-
-  .preview {
-    position: fixed;
-  }
 }
 
 @media all and (min-width: 1200px) {
