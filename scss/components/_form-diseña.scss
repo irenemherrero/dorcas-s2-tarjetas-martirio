@@ -35,7 +35,7 @@
     border-radius: 50%;
 }
 .clikable:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: $color-red-bright;
     opacity: 1;
 }
 .checkmark:after {
@@ -68,11 +68,6 @@
     width: 125px;
 }
 
-.arrowup{
-    margin-right: 20px;
-   
-   
-}
 .form__title-principal{
     margin-left: 10px; 
     padding: 0;  
