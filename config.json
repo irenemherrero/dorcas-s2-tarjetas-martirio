@@ -9,7 +9,8 @@
       "js/anyadirImagen.js",
       "js/skills.js",
 	  "js/createObject.js",
-	  "js/botonreset.js"
+	  "js/botonreset.js",
+	  "js/twitter.js"
 		],
 		"dest": "js/"
 	},

@@ -1,5 +1,6 @@
 'use strict';
 
+
 var botonReset = document.querySelector(".button-reset__title");
 
 function callLocalStore() {
@@ -34,3 +35,4 @@ function sendObjectReset() {
 localStorage.setItem("objeto-reset", JSON.stringify(objetoReset));
 }
 sendObjectReset();
+
