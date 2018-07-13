@@ -10,6 +10,16 @@
   font-family: $font-family-primary;
   font-size: $font-size-m;
 
+  &::after {
+    content: '';
+    background-image: url('../../images/pntilla.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 1200px;
+
+  }
+
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
@@ -33,7 +43,7 @@
   margin-right: 40px;
   @media all and (min-width: 768px) {
     margin-right: 44px;
-    
+
   }
 }
 
