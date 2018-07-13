@@ -123,7 +123,6 @@ function updateTagList() {
   console.log(currentListOfSelects);
 }
 
-
 //////////////////////////////////////////////////////////////////////////////////////
 ////////// ENVIO AL SERVIDOR /////////////////////////////////////////////////////////
 
@@ -156,10 +155,18 @@ function loadPhoto() {
 }
 
 function getJSONFromInputs(inputs) {
+  console.log(inputs);
   return inputs.reduce(function (acc, val) {
-    if (val.nodeName !== 'BUTTON' && val.nodeName !== 'FIELDSET') {
+    console.log(val.nodeName);
+
+
+    if (val.checked===true) {
       acc[val.name] = val.value;
     }
+    if ((val.nodeName !== 'BUTTON') && (val.nodeName !== 'FIELDSET')&&(val.nodeName !== 'INPUT')) {
+      acc[val.name] = val.value;
+    }
+
     return acc;
   }, {});
 }
