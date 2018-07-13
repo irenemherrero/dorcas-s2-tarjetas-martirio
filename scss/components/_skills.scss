@@ -8,11 +8,17 @@
   background-color: white;
   margin-left: 174px;
   border-radius: 50px;
+  position: relative;
   &:focus {
     outline-color: white;
 }
 }
-
+.content-button-habilities{
+    left:50%;
+    top:42%;
+    position:absolute;
+    transform:translate(-50%, -50%);
+}
 .buttonRemove {
   border: 2px solid orange;
   height: 30px;
@@ -23,6 +29,7 @@
   color:orange;
   font-size:26px;
   border-radius: 50px;
+  position: relative;
   &:focus {
     outline-color: white;
 }

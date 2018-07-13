@@ -1,5 +1,4 @@
 .container-mediaqueries-preview{
-  background-color: bisque;
   padding: 20px;
     @media all and (min-width:768px) {
         display: flex;
@@ -14,9 +13,15 @@
 }
 .preview-container{
  border-radius: 10px;
-     @media all and (min-width:768px) {
-       margin-right: 44px;
+   @media all and (min-width:768px) {
+       margin-right: 20px;
+       width: auto;
     }
+   @media all and (min-width:1200px) {
+    width: 400px;
+    margin-left: 200px;
+    margin-right: auto;
+ }
 }
 .container-izquierda{
     @media all and (min-width:768px) {
@@ -25,10 +30,8 @@
     }
 }
 
+//Formato colapsables
 .colapsable--visible {
-  .titulo-colapsable {
-    background-color: opacity 0.5;
-  }
   .contenido-colapsable {
     display: block;
   }
@@ -37,6 +40,11 @@
 .mediaqueries-preview {
   display: flex;
   flex-direction: row-reverse;
+  @media all and (min-width:768px) {
+    width: 329px;
+    min-height: 460px;
+    justify-content: flex-start;
+ }
 }
 
 .preview-container {
@@ -44,6 +52,11 @@
   background-image: url(../images/fondo-dots2.svg);
   display: flex;
   justify-content: center;
+  @media all and (min-width:768px) {
+    width: 329px;
+    min-height: 460px;
+    justify-content: flex-start;
+ }
 }
 
 .margin-preview {
@@ -52,6 +65,7 @@
 }
 
 .button-reset__container {
+  margin-top: 20px;
   width: 75px;
   height: 30px;
   border: 1px solid $color-ligthtone;
@@ -90,6 +104,9 @@
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   height: 367px;
   width: 240px;
+  @media all and (min-width:1200px) {
+    margin-left: 35px;
+}
 }
 
 .preview_title {
@@ -137,6 +154,8 @@
 
 .photo-container {
   display:flex;
+  width: 240px;
+  height: 196px;
 
 }
 .changeImagePreview{
@@ -182,17 +201,18 @@
 }
 
 .etiqueta-habilidad {
-  width: 46px;
+  width: 65px;
   height: 18px;
   border-radius: 4px;
   background-color: $color-secondary-light;
   color: $color-ligthtone;
   font-family: $font-family-primary;
-  font-size: $font-size-s-plus;
+  font-size: $font-size-s;
   font-weight: $normal;
   margin-top: 0;
   margin-right: 10px;
-  text-align: center
+  text-align: center;
+  list-style: none;
 }
 
 //CLASES DE Diseña

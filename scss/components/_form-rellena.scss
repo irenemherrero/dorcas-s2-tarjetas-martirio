@@ -6,6 +6,10 @@
   padding-bottom: 0;
 }
 
+.container__rectangle_title{
+  cursor:pointer;
+}
+
 .icono-teclado {
   color: $color-primary;
   align-self: center;
@@ -37,6 +41,7 @@
   width: 16px;
   height: 18px;
   color: $color-middark;
+  cursor:pointer;
 }
 
 .form__container {
