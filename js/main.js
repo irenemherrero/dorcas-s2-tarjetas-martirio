@@ -86,9 +86,15 @@ inputPuesto.addEventListener("keyup", writeData);
 
 //a parte de esto, modificar los data-id de los input y los id de los campos del preview de nombre y puesto
 
-var colapsables = document.querySelectorAll('.colapsable');
-var tituloColapsable = document.querySelectorAll('.titulo-colapsable');
+var colapsables = document.querySelectorAll('.form__fill');
+var tituloColapsable = document.querySelectorAll('.colapsable-titulo');
 
+
+function cerrarOtrosColapsables(){
+  for(var i = 0; i < colapsables.length; i++){
+    colapsables[i].classList.remove('colapsable--visible');
+  }
+}
 function actualizarColapsable(event) {
   //cogemos todas flechas, esto nos devuelve el grupo de flechas como un array
   var turnArrow = document.querySelectorAll('.turn-arrow');
@@ -99,6 +105,7 @@ function actualizarColapsable(event) {
     contenedor.classList.remove('colapsable--visible');
     turnArrow[clikedID].classList.remove('arrow-down');
   } else {
+    cerrarOtrosColapsables();
     contenedor.classList.add('colapsable--visible');
     turnArrow[clikedID].classList.add('arrow-down');
     }

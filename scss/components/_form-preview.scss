@@ -25,10 +25,8 @@
     }
 }
 
+//Formato colapsables
 .colapsable--visible {
-  .titulo-colapsable {
-    background-color: opacity 0.5;
-  }
   .contenido-colapsable {
     display: block;
   }
