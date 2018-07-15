@@ -114,7 +114,6 @@ button.addEventListener('click', createDiv);
 
 function updateTagList() {
   currentListOfSelects = document.querySelectorAll('.form__select');
-  console.log(currentListOfSelects);
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
   for (var i = 0; i < currentListOfSelects.length; i++) {
@@ -123,7 +122,6 @@ function updateTagList() {
       tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
     }
   }
-  console.log(currentListOfSelects);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
