@@ -14,6 +14,7 @@ function changeCard() {
 
   var j = document.querySelector('.email_button');
   j.href = 'mailto:' + form_email;
+  console.log("maria checkig mail",j.href);
 
   // cambio el enlace de telefono //
 
@@ -120,7 +121,7 @@ for (var i = 0; i < tituloColapsable.length; i++) {
 //color radio buttom\
 var preview = document.querySelector('.preview');
 var colorsP = document.querySelectorAll('.radio-color');
-//una clase -try- para dominarlos a todos
+//una clase -radio color- para dominarlos a todos
 
 function changeColors (event){
   var guiltyElement = event.currentTarget;
