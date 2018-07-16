@@ -406,6 +406,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #f5f5f5;
+  min-height: 100vh;
 }
 
 .landingbox {
@@ -426,7 +427,7 @@ body {
 }
 
 .logo {
-  margin-top: 94px;
+  margin-top: 54px;
   margin-bottom: 36px;
   width: 250px;
   height: 64px;
@@ -500,7 +501,7 @@ body {
 }
 
 .startbutt {
-  width: 129px;
+  width: 100px;
   height: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1228,7 +1229,7 @@ body {
   }
 
   .logo {
-    margin-top: 348px;
+    margin-top: 40px;
     margin-bottom: 31px;
     width: 410px;
     height: 107px;
@@ -1253,7 +1254,7 @@ body {
   }
 
   .startbutt {
-    margin-top: 186px;
+    margin-top: 100px;
     margin-bottom: 59px;
   }
 
