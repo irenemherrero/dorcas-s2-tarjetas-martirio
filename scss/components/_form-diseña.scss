@@ -30,7 +30,7 @@
     width: 17px;
     border-style: solid;
     border-width: 1px;
-    border-color: $color-midtonemidark;   
+    border-color: $color-midtonemidark;
     opacity: 1;
     background-color: $color-ligthtone;
     border-radius: 50%;
@@ -47,14 +47,14 @@
 .clikable:checked ~ .checkmark:after {
   display: block;
   @include absoluteCentered ();
-  
+
 }
 .container_input_div .checkmark:after {
    width: 6px;
    height: 6px;
    border-radius: 50%;
    background:$color-ligthtone;
-  
+
 }
 //position
 
@@ -70,8 +70,8 @@
 }
 
 .form__title-principal{
-    margin-left: 10px; 
-    padding: 0;  
+    margin-left: 10px;
+    padding: 0;
 }
 
 .form__subtitle {
@@ -90,7 +90,7 @@
 .container__input__labels > *{
   display: flex;
   align-items: flex-start;
-  align-items: center;  
+  align-items: center;
 }
 .container_input_div{
     margin-bottom: 20px;
@@ -104,7 +104,7 @@
 }
 .container__font {
     margin-left: 10px;
-   
+
 }
 
 //borders
@@ -175,7 +175,7 @@
 }
 //second-color
 .second-color__square1 {
-    @include creatingSquares ($color-red-blood); 
+    @include creatingSquares ($color-red-blood);
 }
 .second-color__square2 {
     @include creatingSquares ($color-red-bright);
@@ -199,7 +199,7 @@
         .color-line{
             background-color:$color-red-sunset;
         }
-    
+
     .name_line{
         color:$color-red-blood;
     }
@@ -283,5 +283,9 @@
 
 .arrow-down {
     transform: rotate(180deg);
-    
+
+}
+
+.lineasseparacion {
+
 }

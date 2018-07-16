@@ -139,7 +139,6 @@ $font-size-xxl-plus:    px;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 18px;
-  margin-bottom: 38px;
 }
 
 .icon__Third-title {
@@ -535,6 +534,10 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.35);
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.35);
+}
+
+.colapsable-titulo {
+  border-bottom: 1px solid lightgrey;
 }
 
 .colapsable--visible .contenido-colapsable {
