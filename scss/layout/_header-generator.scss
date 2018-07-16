@@ -5,7 +5,7 @@
   height: 150px;
 &::after {
   content: '';
-  background-image: url('../../images/before.svg');
+  background-image: url('../images/before.svg');
   background-size: contain;
   background-repeat: no-repeat;
    display: inline;
