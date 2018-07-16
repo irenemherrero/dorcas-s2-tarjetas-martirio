@@ -138,7 +138,6 @@ function sendData() {
   var inputs = Array.from(form.elements);
   var json = getJSONFromInputs(inputs);
   json.skills = [];
-  console.log(json);
   for (var i = 0; i < currentListOfSelects.length; i++) {
 
     json.skills.push(currentListOfSelects[i].value);
@@ -158,9 +157,6 @@ function loadPhoto() {
 function getJSONFromInputs(inputs) {
   console.log(inputs);
   return inputs.reduce(function (acc, val) {
-    console.log(val.nodeName);
-
-
     if (val.type === 'radio' && val.checked === true) {
       acc[val.name] = val.value;
     }
