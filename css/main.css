@@ -52,7 +52,7 @@ $font-size-xxl-plus:    px;
 
 .header__link::after {
   content: '';
-  background-image: url("../../images/before.svg");
+  background-image: url("../images/before.svg");
   background-size: contain;
   background-repeat: no-repeat;
   display: inline;
@@ -1152,13 +1152,14 @@ body {
   position: relative;
 }
 
+content-button-habilities
 .button:focus {
   outline-color: white;
 }
 
 .content-button-habilities {
   left: 50%;
-  top: 42%;
+  top: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

@@ -9,13 +9,14 @@
   margin-left: 174px;
   border-radius: 50px;
   position: relative;
+  content-button-habilities
   &:focus {
     outline-color: white;
 }
 }
 .content-button-habilities{
     left:50%;
-    top:42%;
+    top:50%;
     position:absolute;
     transform:translate(-50%, -50%);
 }
@@ -30,6 +31,7 @@
   font-size:26px;
   border-radius: 50px;
   position: relative;
+
   &:focus {
     outline-color: white;
 }
