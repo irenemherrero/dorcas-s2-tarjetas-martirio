@@ -43,16 +43,16 @@
           </div>
           <div class="footer-preview__container">
             <div class="logos-container">
-              <a class="boton-red-social tfn_button local--phone" href="#">
+              <a class="boton-red-social tfn_button phone_button" id="element-telefono" href="">
                 <i class="fas fa-mobile-alt logo-preview logo-fono"></i>
               </a>
-              <a class="boton-red-social email_button local--email" href="">
+              <a class="boton-red-social email_button" id="element-email" href="">
                 <i class="far fa-envelope logo-preview logo-carta"></i>
               </a>
-              <a class="boton-red-social linkedin_button local--linkedin" href="">
+              <a class="boton-red-social linkedin_button" id="element-linkedin" href="">
                 <i class="fab fa-linkedin-in logo-preview logo-in"></i>
               </a>
-              <a class="boton-red-social github_button local--github" href="">
+              <a class="boton-red-social github_button" id="element-github" href="">
                 <i class="fab fa-github-alt logo-preview logo-github"></i>
               </a>
             </div>
@@ -190,8 +190,7 @@
             <div class="form__container">
               <!-- Campos JS -->
               <label class="form__label" for="nombre">Nombre completo</label>
-              <input class="form__input form__input--nombre " id="nombre" type="text" name="name" placeholder="Ej. Juanita Reina" maxlength="19"
-                data-donde="element-nombre">
+              <input class="form__input form__input--nombre" id="nombre" type="text" name="name" placeholder="Ej. Martirio" maxlength="19" data-donde="element-nombre">
               <label class="form__label" for="puesto">Puesto</label>
               <input class="form__input form__input--puesto" id="puesto" type="text" name="job" placeholder="Ej. Reina de la canción" maxlength="22"
                 data-donde="element-puesto">
@@ -208,15 +207,15 @@
                 </div>
               </div>
 
-              <label class="form__label" for="email">Email</label>
-              <input class="form__input" id="email" type="mail" name="email" placeholder="Ej. reinadelacopla@ole.es">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input inputhref form__mail " id="email" type="mail" name="email" placeholder="Ej. reinadelacancion@ole.es" data-donde="element-email" href="">
 
               <label class="form__label" for="telefono">Teléfono</label>
-              <input class="form__input" id="telefono" type="number" name="phone" placeholder="Ej. 982938437">
-              <label class="form__label" for="linkedin">Linkedin</label>
-              <input class="form__input" id="linkedin" type="text" name="linkedin" placeholder="Ej. juanita.reina">
+              <input class="form__input inputhref form__telefono" id="telefono" type="number" name="phone" placeholder="Ej. 982938437" data-donde="element-telefono">
+              <label class="form__label " for="linkedin">Linkedin</label>
+              <input class="form__input inputhref form__linkedin" id="linkedin" type="text" name="linkedin" placeholder="Ej. martirio.reina" data-donde="element-linkedin">
               <label class="form__label" for="github">Github</label>
-              <input class="form__input" id="github" type="text" name="github" placeholder="Ej. juanita-reina">
+              <input class="form__input inputhref form__github" id="github" type="text" name="github" placeholder="Ej. martirio-reina" data-donde="element-github">
               <div class="form__container--habilidades">
                 <label class="form__label" for="habilidades">Habilidades (máximo 3)</label>
 
