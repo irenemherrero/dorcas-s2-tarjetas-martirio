@@ -1,12 +1,9 @@
 'use strict';
 
-
 // CODIGO JS PARA AÑADIR IMAGEN
 
-// No hacer caso a la línea del FileReader, como en el mago de oz con el tipo de la cortina :)
 var fr = new FileReader();
 
-// Caso a partir de aquí :)
 var uploadBtn = document.querySelector('.action__upload-btn');
 
 var fileField = document.querySelector('#img-selector');
