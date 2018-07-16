@@ -114,7 +114,6 @@ button.addEventListener('click', createDiv);
 
 function updateTagList() {
   currentListOfSelects = document.querySelectorAll('.form__select');
-  console.log(currentListOfSelects);
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
   for (var i = 0; i < currentListOfSelects.length; i++) {
@@ -123,7 +122,6 @@ function updateTagList() {
       tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
     }
   }
-  console.log(currentListOfSelects);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -194,10 +192,21 @@ function sendRequest(json) {
     });
 }
 
+var twitterURL; 
 function showURL(result) {
   if (result.success) {
     responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
   } else {
     responseURL.innerHTML = 'ERROR:' + result.error;
   }
+  twitterURL = result.cardURL;
 }
+
+
+var buttonTwitter = document.querySelector('.maketwitter');
+
+function shareOnTwitter() {
+  buttonTwitter.href = 'https://twitter.com/intent/tweet?url=' + twitterURL + '&text=Acabo%20de%20crear%20mi%20tarjeta%20con%20Font%20Awesome%20de%20Tarjetas-Martirio&hashtags=WomenInTech';
+}
+
+buttonTwitter.addEventListener('click', shareOnTwitter);

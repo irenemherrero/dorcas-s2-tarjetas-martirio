@@ -14,6 +14,7 @@ function changeCard() {
 
   var j = document.querySelector('.email_button');
   j.href = 'mailto:' + form_email;
+  console.log("maria checkig mail",j.href);
 
   // cambio el enlace de telefono //
 
@@ -39,6 +40,7 @@ function saveData() {
   var catch_email = document.querySelector('#email');
 
   form_email = catch_email.value;
+  console.log(form_email);
 
 
 
@@ -90,9 +92,10 @@ var colapsables = document.querySelectorAll('.form__fill');
 var tituloColapsable = document.querySelectorAll('.colapsable-titulo');
 
 
-function cerrarOtrosColapsables(){
+function cerrarOtrosColapsables(turnArrow){
   for(var i = 0; i < colapsables.length; i++){
     colapsables[i].classList.remove('colapsable--visible');
+    turnArrow[i].classList.remove('arrow-down');
   }
 }
 function actualizarColapsable(event) {
@@ -105,7 +108,7 @@ function actualizarColapsable(event) {
     contenedor.classList.remove('colapsable--visible');
     turnArrow[clikedID].classList.remove('arrow-down');
   } else {
-    cerrarOtrosColapsables();
+    cerrarOtrosColapsables(turnArrow);
     contenedor.classList.add('colapsable--visible');
     turnArrow[clikedID].classList.add('arrow-down');
     }
@@ -118,7 +121,7 @@ for (var i = 0; i < tituloColapsable.length; i++) {
 //color radio buttom\
 var preview = document.querySelector('.preview');
 var colorsP = document.querySelectorAll('.radio-color');
-//una clase -try- para dominarlos a todos
+//una clase -radio color- para dominarlos a todos
 
 function changeColors (event){
   var guiltyElement = event.currentTarget;
