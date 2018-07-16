@@ -15,8 +15,10 @@ function writeData(event) {
         hrefelement.href = 'mailto:' + campoModificado.value;
       } else if(campoModificado.name === "phone"){
         hrefelement.href = 'tel:' + campoModificado.value;
+      } else if(campoModificado.name === "linkedin"){
+        hrefelement.href = "https://www.linkedin.com/in/" + campoModificado.value;
       } else {
-        hrefelement.href = campoModificado.value;
+        hrefelement.href = "https://github.com/" + campoModificado.value;
       }
     }  
 }
