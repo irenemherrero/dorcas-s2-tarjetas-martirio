@@ -114,7 +114,6 @@ button.addEventListener('click', createDiv);
 
 function updateTagList() {
   currentListOfSelects = document.querySelectorAll('.form__select');
-  console.log(currentListOfSelects);
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
   for (var i = 0; i < currentListOfSelects.length; i++) {
@@ -123,7 +122,6 @@ function updateTagList() {
       tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
     }
   }
-  console.log(currentListOfSelects);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -140,7 +138,6 @@ function sendData() {
   var inputs = Array.from(form.elements);
   var json = getJSONFromInputs(inputs);
   json.skills = [];
-  console.log(json);
   for (var i = 0; i < currentListOfSelects.length; i++) {
 
     json.skills.push(currentListOfSelects[i].value);
@@ -160,13 +157,10 @@ function loadPhoto() {
 function getJSONFromInputs(inputs) {
   console.log(inputs);
   return inputs.reduce(function (acc, val) {
-    console.log(val.nodeName);
-
-
-    if (val.type==='radio' && val.checked===true) {
+    if (val.type === 'radio' && val.checked === true) {
       acc[val.name] = val.value;
     }
-    if ((val.nodeName !== 'BUTTON') && (val.nodeName !== 'FIELDSET') && (val.type!=='radio') ){
+    if ((val.nodeName !== 'BUTTON') && (val.nodeName !== 'FIELDSET') && (val.type !== 'radio')) {
       acc[val.name] = val.value;
     }
 
@@ -194,10 +188,11 @@ function sendRequest(json) {
     });
 }
 
-var twitterURL; 
+var twitterURL;
+
 function showURL(result) {
   if (result.success) {
-    responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
+    responseURL.innerHTML = 'La tarjeta ha sido creada: <br> <a href=' + result.cardURL + '>' + 'Haga click aquí' + '</a>';
   } else {
     responseURL.innerHTML = 'ERROR:' + result.error;
   }

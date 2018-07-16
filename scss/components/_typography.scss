@@ -1,18 +1,12 @@
 
-
 $light: 300;
 $normal: 400;
 $semibold: 600;
 $bold: 900;
 
-/*
-$font-size-super-xl:    px;
-$font-size-super:       px;
-$font-size-su:          px;
-$font-size-xxl-plus:    px;
 $font-size-xxl:         24px;
 $font-size-xl-plus:     22px;
-*/
+
 
 $font-size-xl:          20px;
 $font-size-l:           18px;
@@ -27,50 +21,3 @@ $font-family-secundary: 'Merriweather', serif;
 $font-family-special:"Comic Sans MS", "Comic Sans", cursive;
 
 
-
-
-/*
-
-.txt-md {
-  font-size: 16px;
-
-  @media (min-width: 1024px) {
-    font-size: 18px;
-    line-height: 1.68;
-  }
-}
-
-.txt-lg {
-  font-size: 20px;
-  line-height: 1.6;
-
-  @media (min-width: 1024px) {
-    font-size: 26px;
-    line-height: 1.4;
-  }
-}
-
-.txt-xl {
-  font-size: 20px;
-  line-height: 1.2;
-
-  @media (min-width: 1024px) {
-    font-size: 54px;
-    font-weight: $light;
-  }
-}
-
-.txt-center { text-align: center; }
-.txt-left { text-align: left; }
-.txt-right { text-align: right; }
-
-.txt-primary { color: $color-primary; }
-.txt-light { color: $color-bg-light; }
-
-.italic { font-style: italic; }
-.light { font-weight: $light; }
-.normal { font-weight: $normal; }
-.medium { font-weight: $semibold; }
-
-.uppercase { text-transform: uppercase; }
-*/
