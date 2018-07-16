@@ -14,7 +14,6 @@ function changeCard() {
 
   var j = document.querySelector('.email_button');
   j.href = 'mailto:' + form_email;
-  console.log("maria checkig mail",j.href);
 
   // cambio el enlace de telefono //
 
@@ -25,12 +24,12 @@ function changeCard() {
   // cambio el enlace de linkedin de la vista previa //
 
   var z = document.querySelector('.linkedin_button');
-  z.href = form_lk;
+  z.href ='https://es.linkedin.com/in/'+form_lk;
 
   // cambio el enlace de github de la vista previa //
 
   var w = document.querySelector('.github_button');
-  w.href = form_gh;
+  w.href ='https://github.com/'+ form_gh;
 }
 
 
@@ -131,7 +130,7 @@ function changeColors (event){
     preview.classList.remove('greenTarget', 'greyTarget','redTarget');
     preview.classList.add(targetID);
   }
- 
+
 }
 for (var i = 0; i < colorsP.length; i++) {
   colorsP[i].addEventListener('click', changeColors);
@@ -150,7 +149,7 @@ function changeFonts (event){
     preview.classList.remove('comicFont', 'montFont','ubuntuFont');
     preview.classList.add(targetID);
   }
- 
+
 }
 for (var i = 0; i < fontsP.length; i++) {
   fontsP[i].addEventListener('click', changeFonts );
