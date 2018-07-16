@@ -50,6 +50,7 @@
 .preview-container {
   border: 0;
   background-image: url(../images/fondo-dots2.svg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   @media all and (min-width:768px) {

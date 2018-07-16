@@ -604,6 +604,7 @@ body {
 .preview-container {
   border: 0;
   background-image: url(../images/fondo-dots2.svg);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
