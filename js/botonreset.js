@@ -84,6 +84,10 @@ function sendObjectReset() {
         //"skills": ["HTML", "Sass", "JavaScript"]
       };
 localStorage.setItem("objeto-reset", JSON.stringify(objetoReset));
+
+if (localStorage.getItem("objeto-update")=== null){
+    localStorage.setItem("objeto-update", JSON.stringify(objetoReset));
+}
 }
 sendObjectReset();
 
