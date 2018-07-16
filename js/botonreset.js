@@ -7,6 +7,10 @@ var botonReset = document.querySelector(".button-reset__title");
 //reset target
 function callLocalStore() {
     var objetoReset = JSON.parse(localStorage.getItem("objeto-reset"));
+    var imagePreviewReset = document.querySelector('.changeImagePreview');
+    var profileImage = document.querySelector('.profile-image__item');
+    profileImage.src = objetoReset.photo;
+    imagePreview.src = objetoReset.photo;
     for(var i in objetoReset){
        var classReset= document.querySelector(".local--" + i);
         var inputReset= document.querySelector(".local--input--" + i);
