@@ -60,24 +60,6 @@ function callLocalStore() {
         buttonDefault.checked = true;
     }
     
-    /*else if (classReset.classList.contains('local--skills')){
-        var  tagsReset = document.querySelector('li');
-        var containerp = document.querySelector('.etiquetas-habilidades-container');
-        //arrayREset = objetoReset[i];
-        for (var j = 0; j < 3; j++){
-        containerp.removeChild(tagsReset);
-        }
-    
-       for (var j = 0; j < 3; j++) {
-           console.log("pepitacheck",objetoReset.skills[j]);
-            var newItem = document.createElement('p');
-            var newContent = document.createTextNode(objetoReset.skills[j]);
-            newItem.appendChild(newContent);
-            newItem.classList.add('etiqueta-habilidad');
-            containerp.appendChild(newItem);
-       }     
-        
-        }*/
         else {
         classReset.innerHTML = objetoReset[i];
      } 

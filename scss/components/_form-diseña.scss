@@ -216,21 +216,20 @@
 
 .greenTarget {
     .color-line{
-        background-color:$color-secondary-lighter;
+    background-color:$color-secondary-lighter;
     }
-
-.name_line{
+    .name_line{
     color:$color-secondary;
-}
-.boton-red-social {
-  border: solid 2px $color-secondary-lighter;
-}
-.etiqueta-habilidad{
-  background-color: $color-secondary-light;
-}
-.logo-preview{
-  color: $color-secondary;
-}
+    }
+    .boton-red-social {
+     border: solid 2px $color-secondary-lighter;
+    }
+    .etiqueta-habilidad{
+    background-color: $color-secondary-light;
+    }
+    .logo-preview{
+    color: $color-secondary;
+    }
 }
 
 .greyTarget {
