@@ -3,11 +3,17 @@
 
 var botonReset = document.querySelector(".button-reset__title");
 
+
+//reset target
 function callLocalStore() {
     var objetoReset = JSON.parse(localStorage.getItem("objeto-reset"));
     for(var i in objetoReset){
        var classReset= document.querySelector(".local--" + i);
-      
+        var inputReset= document.querySelector(".local--input--" + i);
+       if (i !== "palette" && i !== "typography" && i !== "photo"){
+       console.log(i)
+     inputReset.value = "";}
+       
     if(classReset.classList.contains('local--photo')){
         classReset.src = objetoReset[i];
         
@@ -50,7 +56,7 @@ function callLocalStore() {
         buttonDefault.checked = true;
     }
     
-    /* else if (classReset.classList.contains('local--skills')){
+    /*else if (classReset.classList.contains('local--skills')){
         var  tagsReset = document.querySelector('li');
         var containerp = document.querySelector('.etiquetas-habilidades-container');
         //arrayREset = objetoReset[i];
@@ -72,7 +78,9 @@ function callLocalStore() {
         classReset.innerHTML = objetoReset[i];
      } 
     }
+   
 }
+
 
 botonReset.addEventListener("click", callLocalStore)
 
