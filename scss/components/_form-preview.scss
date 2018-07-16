@@ -95,13 +95,14 @@ border-bottom: 1px solid lightgrey;
 
 .button-reset__title {
   width: 34px;
-  height: 20px;
-  font-family: $font-family-primary;
+  height: 15px;
+  font-family: $font-family-primary,arial, sans-serif;
   font-size: $font-size-s;
   font-weight: $normal;
   color: $color-primary;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 8px;
 }
 
 .button-reset__link {

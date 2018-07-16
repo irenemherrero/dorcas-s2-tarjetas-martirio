@@ -595,13 +595,14 @@ body {
 
 .button-reset__title {
   width: 34px;
-  height: 20px;
-  font-family: "Open Sans", sans-serif;
+  height: 15px;
+  font-family: "Open Sans", sans-serif, arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #e17334;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 8px;
 }
 
 .button-reset__link {
