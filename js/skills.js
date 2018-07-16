@@ -23,6 +23,7 @@ function searchArray() {
       arraySkills = json.skills;
       arraySkills.push(optionAsPlaceholderText);
       arraySkills.reverse();
+      createDiv();
     });
 }
 
