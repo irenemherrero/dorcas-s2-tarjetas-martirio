@@ -1,19 +1,19 @@
 'use strict';
 
 
-var botonReset = document.querySelector(".button-reset__title");
+const botonReset = document.querySelector(".button-reset__title");
 
 
 //reset target
 function callLocalStore() {
-    var objetoReset = JSON.parse(localStorage.getItem("objeto-reset"));
-    var imagePreviewReset = document.querySelector('.changeImagePreview');
-    var profileImage = document.querySelector('.profile-image__item');
+    const objetoReset = JSON.parse(localStorage.getItem("objeto-reset"));
+    const imagePreviewReset = document.querySelector('.changeImagePreview');
+    const profileImage = document.querySelector('.profile-image__item');
     profileImage.src = objetoReset.photo;
     imagePreview.src = objetoReset.photo;
-    for(var i in objetoReset){
-       var classReset= document.querySelector(".local--" + i);
-        var inputReset= document.querySelector(".local--input--" + i);
+    for(const i in objetoReset){
+       const classReset= document.querySelector(".local--" + i);
+        const inputReset= document.querySelector(".local--input--" + i);
        if (i !== "palette" && i !== "typography" && i !== "photo"){
        console.log(i)
      inputReset.value = "";}
@@ -39,24 +39,24 @@ function callLocalStore() {
         
     }
     else if (classReset.classList.contains('local--palette')){
-         var resetColorP = document.querySelectorAll('.radio-color');
+         const resetColorP = document.querySelectorAll('.radio-color');
         classReset.value =  objetoReset[i];
-        var botonNumberC = classReset.value;
+        const botonNumberC = classReset.value;
         resetColorP[botonNumberC].checked = false;
         preview.classList.remove('redTarget', 'greyTarget');
         preview.classList.add('greenTarget');
-        var buttonDefaultColor = document.getElementById('form__subtitle__first-color');
+        const buttonDefaultColor = document.getElementById('form__subtitle__first-color');
         buttonDefaultColor.checked = true; 
         
     }
     else if (classReset.classList.contains('local--typography')){
-        var resetFotnP = document.querySelectorAll('.radio-font');
+        const resetFotnP = document.querySelectorAll('.radio-font');
         classReset.value =  objetoReset[i];
-        var botonNumber = classReset.value;
+        const botonNumber = classReset.value;
         resetFotnP[botonNumber].checked = false;
         preview.classList.remove('montFont','ubuntuFont');
         preview.classList.add('comicFont');
-        var buttonDefault = document.getElementById('form__subtitle__second-font');
+        const buttonDefault = document.getElementById('form__subtitle__second-font');
         buttonDefault.checked = true;
     }
     
@@ -71,7 +71,7 @@ function callLocalStore() {
 botonReset.addEventListener("click", callLocalStore)
 
 function sendObjectReset() {
-    var objetoReset = {
+    const objetoReset = {
         "name" : "Martirio",
         "job": "Reina de la canción",
          "phone": "982938437",
