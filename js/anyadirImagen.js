@@ -2,14 +2,14 @@
 
 // CODIGO JS PARA AÑADIR IMAGEN
 
-var fr = new FileReader();
+const fr = new FileReader();
 
-var uploadBtn = document.querySelector('.action__upload-btn');
+const uploadBtn = document.querySelector('.action__upload-btn');
 
-var fileField = document.querySelector('#img-selector');
-var profileImage = document.querySelector('.profile-image__item');
+const fileField = document.querySelector('#img-selector');
+const profileImage = document.querySelector('.profile-image__item');
 
-var imagePreview = document.querySelector('.changeImagePreview');
+const imagePreview = document.querySelector('.changeImagePreview');
 
 function getImage(e) {
   var myFile = e.currentTarget.files[0];

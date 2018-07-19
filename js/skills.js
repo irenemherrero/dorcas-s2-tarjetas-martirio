@@ -113,7 +113,7 @@ button.addEventListener('click', createDiv);
 ////////////// AÑADIR A LA TARJETA ///////////////////
 
 
-function updateTagList() {
+const updateTagList = () => {
   currentListOfSelects = document.querySelectorAll('.form__select');
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
@@ -131,11 +131,10 @@ function updateTagList() {
 const submitButton = document.querySelector('#submit');
 const responseURL = document.querySelector('.response');
 const form = document.querySelector('form');
-let fr = new FileReader();
 
-submitButton.addEventListener('click', loadPhoto);
 
-function sendData() {
+
+const sendData = () => {
   const inputs = Array.from(form.elements);
   const json = getJSONFromInputs(inputs);
   json.skills = [];
@@ -144,18 +143,21 @@ function sendData() {
     json.skills.push(currentListOfSelects[i].value);
   }
 
+
   json.photo = fr.result;
   sendRequest(json);
 }
 
-function loadPhoto() {
+const loadPhoto = () => {
 
   const myFile = document.querySelector('#img-selector').files[0];
   fr.addEventListener('load', sendData);
   fr.readAsDataURL(myFile);
 }
 
-function getJSONFromInputs(inputs) {
+submitButton.addEventListener('click', loadPhoto);
+
+const getJSONFromInputs = (inputs) => {
   console.log(inputs);
   return inputs.reduce(function (acc, val) {
     if (val.type === 'radio' && val.checked === true) {
@@ -170,7 +172,7 @@ function getJSONFromInputs(inputs) {
 }
 
 
-function sendRequest(json) {
+const sendRequest = (json) => {
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
       method: 'POST',
       body: JSON.stringify(json),
@@ -191,7 +193,7 @@ function sendRequest(json) {
 
 var twitterURL;
 
-function showURL(result) {
+const showURL = (result) => {
   if (result.success) {
     responseURL.innerHTML = `La tarjeta ha sido creada: <br> <a href= ${result.cardURL} >  Haga click aquí </a>`;
   } else {
@@ -203,7 +205,7 @@ function showURL(result) {
 
 const buttonTwitter = document.querySelector('.maketwitter');
 
-function shareOnTwitter() {
+const shareOnTwitter = () => {
   buttonTwitter.href = `https://twitter.com/intent/tweet?url= ${twitterURL} &text=Acabo%20de%20crear%20mi%20tarjeta%20con%20Font%20Awesome%20de%20Tarjetas-Martirio&hashtags=WomenInTech`;
 }
 
