@@ -5,28 +5,28 @@
 const radio = document.querySelector("form__subtitle__first-color");
 const arrayForm = document.querySelectorAll(".form__input");
 
-function saveLocalStore (key, value){
+const saveLocalStore = (key, value) => {
   const objetoResetInit = JSON.parse(localStorage.getItem("objeto-update"));
   objetoResetInit[key] = value;
   localStorage.setItem("objeto-update", JSON.stringify(objetoResetInit));
 }
 
-function writeData(event) {
+const writeData = event => {
   const campoModificado = event.currentTarget;
   saveLocalStore(campoModificado.name, campoModificado.value);
     if(campoModificado.classList.contains("form__input") && !campoModificado.classList.contains("inputhref")){
-     const elementInCard = document.querySelector(".local--" + campoModificado.name);
+     const elementInCard = document.querySelector(`.local-- ${campoModificado.name}`);
       elementInCard.innerHTML = campoModificado.value;
-    } else if(campoModificado.classList.contains("inputhref")){
-      const hrefelement = document.querySelector("." + campoModificado.name + "_button");
+    } else if(campoModificado.classList.contains("inputhref")) {
+      const hrefelement = document.querySelector(`. ${campoModificado.name} _button`);
       if(campoModificado.name === "email") {
-        hrefelement.href = 'mailto:' + campoModificado.value;
+        hrefelement.href = `mailto: ${campoModificado.value}`;
       } else if(campoModificado.name === "phone"){
-        hrefelement.href = 'tel:' + campoModificado.value;
+        hrefelement.href = `tel: ${campoModificado.value}`;
       } else if(campoModificado.name === "linkedin"){
-        hrefelement.href = "https://www.linkedin.com/in/" + campoModificado.value;
+        hrefelement.href = `https://www.linkedin.com/in/ ${campoModificado.value}`;
       } else {
-        hrefelement.href = "https://github.com/" + campoModificado.value;
+        hrefelement.href = `https://github.com/ ${campoModificado.value}`;
       }
     }
 }
@@ -42,13 +42,14 @@ const colapsables = document.querySelectorAll('.form__fill');
 const tituloColapsable = document.querySelectorAll('.colapsable-titulo');
 
 
-function cerrarOtrosColapsables(turnArrow){
-  for(const i = 0; i < colapsables.length; i++){
+const cerrarOtrosColapsables = turnArrow => {
+  for(let i = 0; i < colapsables.length; i++){
     colapsables[i].classList.remove('colapsable--visible');
     turnArrow[i].classList.remove('arrow-down');
   }
 }
-function actualizarColapsable(event) {
+
+const actualizarColapsable = event => {
   //cogemos todas flechas, esto nos devuelve el grupo de flechas como un array
   const turnArrow = document.querySelectorAll('.turn-arrow');
   const contenedor = event.currentTarget.parentElement;
@@ -73,15 +74,15 @@ const preview = document.querySelector('.preview');
 const colorsP = document.querySelectorAll('.radio-color');
 //una clase -try- para dominarlos a todos
 
-function changeColors (event){
+const changeColors = event => {
   const guiltyElement = event.currentTarget;
   const targetID = guiltyElement.getAttribute('data-donde');
   if (guiltyElement.checked === true) {
     preview.classList.remove('greenTarget', 'greyTarget','redTarget');
     preview.classList.add(targetID);
   }
-
 }
+
 for (let i = 0; i < colorsP.length; i++) {
   colorsP[i].addEventListener('click', changeColors);
 }
@@ -91,7 +92,7 @@ for (let i = 0; i < colorsP.length; i++) {
 let state;
 const fontsP = document.querySelectorAll('.radio-font');
 //una clase -radio-font- para dominarlos a todos
-function changeFonts (event){
+const changeFonts = event => {
   const guiltyElement = event.currentTarget;
   const state = guiltyElement.checked;
   const targetID = guiltyElement.getAttribute('data-donde');
