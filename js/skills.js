@@ -4,13 +4,13 @@
 const tagsContainer = document.querySelector('.etiquetas-habilidades-container');
 const button = document.querySelector('.button');
 const divMadre = document.getElementById('mama');
-const arraySkills = [];
-const selectSkills;
-const contadorClases = 1;
-const container;
-const buttonRemove;
+let arraySkills = [];
+let selectSkills;
+let contadorClases = 1;
+let container;
+let buttonRemove;
 const optionAsPlaceholderText = 'Elige habilidad';
-const currentListOfSelects;
+let currentListOfSelects;
 /////////////// FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
 function searchArray() {
@@ -33,7 +33,7 @@ function searchArray() {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //// CODIGO SKILLS //
 
-function eliminaUltimoDiv() {
+const eliminaUltimoDiv = () =>{
 
   if (contadorClases > 2) {
     var k = event.currentTarget.parentElement;
@@ -47,7 +47,7 @@ function eliminaUltimoDiv() {
   }
 }
 
-function createRemoveButton() {
+const createRemoveButton = () => {
   buttonRemove = document.createElement('button');
   buttonRemove.setAttribute("type", "button");
   const insertMinus = document.createElement("div");
@@ -60,7 +60,7 @@ function createRemoveButton() {
   buttonRemove.addEventListener('click', eliminaUltimoDiv);
 }
 
-function changeSkills() {
+let changeSkills = () => {
   //creo una etiqueta select//
   selectSkills = document.createElement('select');
   selectSkills.setAttribute('name', 'hola');
@@ -81,7 +81,7 @@ function changeSkills() {
   }
 }
 
-function createDiv() {
+const createDiv = () => {
 
   if (contadorClases < 3) {
     //creo un div//
