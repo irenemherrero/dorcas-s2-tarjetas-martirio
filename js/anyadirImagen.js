@@ -11,18 +11,18 @@ const profileImage = document.querySelector('.profile-image__item');
 
 const imagePreview = document.querySelector('.changeImagePreview');
 
-function getImage(e) {
+const getImage = (e) => {
   var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
 
-function writeImage() {
+const writeImage= () => {
   profileImage.src = fr.result;
   imagePreview.src = fr.result;
 }
 
-function fakeFileClick() {
+const fakeFileClick = () => {
   fileField.click();
 }
 
