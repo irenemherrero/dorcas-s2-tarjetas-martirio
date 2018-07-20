@@ -33,7 +33,7 @@ function searchArray() {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //// CODIGO SKILLS //
 
-const eliminaUltimoDiv = () =>{
+const eliminaUltimoDiv = () => {
 
   if (contadorClases > 2) {
     var k = event.currentTarget.parentElement;
@@ -68,11 +68,11 @@ let changeSkills = () => {
   container.appendChild(selectSkills);
 
   //bucle para rellenar el select con tantos options como colores haya en el arrayColors//
-  for (var i = 0; i < arraySkills.length; i++) {
+  for (const arrayOptions of arraySkills){
     //creamos el elemento option//
     var option = document.createElement('option');
     //creamos el texto de dentro del option, en este caso lo rellenamos con los strings que hay en arraySkills//
-    var insertSkillToOption = document.createTextNode(arraySkills[i]);
+    var insertSkillToOption = document.createTextNode(arrayOptions);
     //Metemos los Strings dentro de los options//
     option.appendChild(insertSkillToOption);
     // metemoslos options dentro de los select//
