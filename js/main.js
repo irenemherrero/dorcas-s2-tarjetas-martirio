@@ -41,9 +41,8 @@ for(let a = 0; a < arrayForm.length; a++){
 const colapsables = document.querySelectorAll('.form__fill');
 const tituloColapsable = document.querySelectorAll('.colapsable-titulo');
 
-
 const cerrarOtrosColapsables = turnArrow => {
-  for(let i = 0; i < colapsables.length; i++){
+  for (let i = 0; i < colapsables.length; i++) {
     colapsables[i].classList.remove('colapsable--visible');
     turnArrow[i].classList.remove('arrow-down');
   }
