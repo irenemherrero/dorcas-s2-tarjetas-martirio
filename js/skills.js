@@ -117,8 +117,7 @@ const updateTagList = () => {
   currentListOfSelects = document.querySelectorAll('.form__select');
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
-  for (const i = 0; i < currentListOfSelects.length; i++) {
-    const currentSelect = currentListOfSelects[i];
+  for (const currentSelect of currentListOfSelects) {
     if (currentSelect.value !== optionAsPlaceholderText) {
       tagsContainer.innerHTML += `<li class="etiqueta-habilidad"> ${currentSelect.value} </li>`;
     }
@@ -132,15 +131,13 @@ const submitButton = document.querySelector('#submit');
 const responseURL = document.querySelector('.response');
 const form = document.querySelector('form');
 
-
-
 const sendData = () => {
   const inputs = Array.from(form.elements);
   const json = getJSONFromInputs(inputs);
   json.skills = [];
-  for (const i = 0; i < currentListOfSelects.length; i++) {
+  for (const currentSelect of  currentListOfSelects) {
 
-    json.skills.push(currentListOfSelects[i].value);
+    json.skills.push(currentSelect.value);
   }
 
 
