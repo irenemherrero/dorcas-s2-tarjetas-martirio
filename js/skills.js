@@ -1,16 +1,16 @@
 'use strict';
 
 /// CODIGO SKILLS //
-var tagsContainer = document.querySelector('.etiquetas-habilidades-container');
-var button = document.querySelector('.button');
-var divMadre = document.getElementById('mama');
-var arraySkills = [];
-var selectSkills;
-var contadorClases = 1;
-var container;
-var buttonRemove;
-var optionAsPlaceholderText = 'Elige habilidad';
-var currentListOfSelects;
+const tagsContainer = document.querySelector('.etiquetas-habilidades-container');
+const button = document.querySelector('.button');
+const divMadre = document.getElementById('mama');
+let arraySkills = [];
+let selectSkills;
+let contadorClases = 1;
+let container;
+let buttonRemove;
+const optionAsPlaceholderText = 'Elige habilidad';
+let currentListOfSelects;
 /////////////// FETCH PARA RECOGER LOS SKILLS DEL SERVIDOR /////////////////////////////
 
 function searchArray() {
@@ -33,7 +33,7 @@ function searchArray() {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //// CODIGO SKILLS //
 
-function eliminaUltimoDiv() {
+const eliminaUltimoDiv = () => {
 
   if (contadorClases > 2) {
     var k = event.currentTarget.parentElement;
@@ -47,12 +47,12 @@ function eliminaUltimoDiv() {
   }
 }
 
-function createRemoveButton() {
+const createRemoveButton = () => {
   buttonRemove = document.createElement('button');
   buttonRemove.setAttribute("type", "button");
-  var insertMinus = document.createElement("div");
+  const insertMinus = document.createElement("div");
   insertMinus.classList.add("content-button-habilities");
-  var minus = document.createTextNode("-");
+  const minus = document.createTextNode("-");
   insertMinus.appendChild(minus);
   buttonRemove.appendChild(insertMinus);
   container.appendChild(buttonRemove);
@@ -60,7 +60,7 @@ function createRemoveButton() {
   buttonRemove.addEventListener('click', eliminaUltimoDiv);
 }
 
-function changeSkills() {
+let changeSkills = () => {
   //creo una etiqueta select//
   selectSkills = document.createElement('select');
   selectSkills.setAttribute('name', 'hola');
@@ -68,11 +68,11 @@ function changeSkills() {
   container.appendChild(selectSkills);
 
   //bucle para rellenar el select con tantos options como colores haya en el arrayColors//
-  for (var i = 0; i < arraySkills.length; i++) {
+  for (const arrayOptions of arraySkills){
     //creamos el elemento option//
     var option = document.createElement('option');
     //creamos el texto de dentro del option, en este caso lo rellenamos con los strings que hay en arraySkills//
-    var insertSkillToOption = document.createTextNode(arraySkills[i]);
+    var insertSkillToOption = document.createTextNode(arrayOptions);
     //Metemos los Strings dentro de los options//
     option.appendChild(insertSkillToOption);
     // metemoslos options dentro de los select//
@@ -81,7 +81,7 @@ function changeSkills() {
   }
 }
 
-function createDiv() {
+const createDiv = () => {
 
   if (contadorClases < 3) {
     //creo un div//
