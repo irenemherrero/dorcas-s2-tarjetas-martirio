@@ -113,14 +113,14 @@ button.addEventListener('click', createDiv);
 ////////////// AÑADIR A LA TARJETA ///////////////////
 
 
-const updateTagList = () => {
+function updateTagList() {
   currentListOfSelects = document.querySelectorAll('.form__select');
   tagsContainer.innerHTML = ''; //limpio los skills del preview
 
-  for (const i = 0; i < currentListOfSelects.length; i++) {
-    const currentSelect = currentListOfSelects[i];
+  for (var i = 0; i < currentListOfSelects.length; i++) {
+    var currentSelect = currentListOfSelects[i];
     if (currentSelect.value !== optionAsPlaceholderText) {
-      tagsContainer.innerHTML += `<li class="etiqueta-habilidad"> ${currentSelect.value} </li>`;
+      tagsContainer.innerHTML += '<li class="etiqueta-habilidad">' + currentSelect.value + '</li>';
     }
   }
 }
@@ -128,36 +128,34 @@ const updateTagList = () => {
 //////////////////////////////////////////////////////////////////////////////////////
 ////////// ENVIO AL SERVIDOR /////////////////////////////////////////////////////////
 
-const submitButton = document.querySelector('#submit');
-const responseURL = document.querySelector('.response');
-const form = document.querySelector('form');
+var submitButton = document.querySelector('#submit');
+var responseURL = document.querySelector('.response');
+var form = document.querySelector('form');
+var fr = new FileReader();
 
+submitButton.addEventListener('click', loadPhoto);
 
-
-const sendData = () => {
-  const inputs = Array.from(form.elements);
-  const json = getJSONFromInputs(inputs);
+function sendData() {
+  var inputs = Array.from(form.elements);
+  var json = getJSONFromInputs(inputs);
   json.skills = [];
-  for (const i = 0; i < currentListOfSelects.length; i++) {
+  for (var i = 0; i < currentListOfSelects.length; i++) {
 
     json.skills.push(currentListOfSelects[i].value);
   }
-
 
   json.photo = fr.result;
   sendRequest(json);
 }
 
-const loadPhoto = () => {
+function loadPhoto() {
 
-  const myFile = document.querySelector('#img-selector').files[0];
+  var myFile = document.querySelector('#img-selector').files[0];
   fr.addEventListener('load', sendData);
   fr.readAsDataURL(myFile);
 }
 
-submitButton.addEventListener('click', loadPhoto);
-
-const getJSONFromInputs = (inputs) => {
+function getJSONFromInputs(inputs) {
   console.log(inputs);
   return inputs.reduce(function (acc, val) {
     if (val.type === 'radio' && val.checked === true) {
@@ -172,7 +170,7 @@ const getJSONFromInputs = (inputs) => {
 }
 
 
-const sendRequest = (json) => {
+function sendRequest(json) {
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
       method: 'POST',
       body: JSON.stringify(json),
@@ -193,20 +191,20 @@ const sendRequest = (json) => {
 
 var twitterURL;
 
-const showURL = (result) => {
+function showURL(result) {
   if (result.success) {
-    responseURL.innerHTML = `La tarjeta ha sido creada: <br> <a href= ${result.cardURL} >  Haga click aquí </a>`;
+    responseURL.innerHTML = 'La tarjeta ha sido creada: <br> <a href=' + result.cardURL + '>' + 'Haga click aquí' + '</a>';
   } else {
-    responseURL.innerHTML = `ERROR: ${result.error}`;
+    responseURL.innerHTML = 'ERROR:' + result.error;
   }
   twitterURL = result.cardURL;
 }
 
 
-const buttonTwitter = document.querySelector('.maketwitter');
+var buttonTwitter = document.querySelector('.maketwitter');
 
-const shareOnTwitter = () => {
-  buttonTwitter.href = `https://twitter.com/intent/tweet?url= ${twitterURL} &text=Acabo%20de%20crear%20mi%20tarjeta%20con%20Font%20Awesome%20de%20Tarjetas-Martirio&hashtags=WomenInTech`;
+function shareOnTwitter() {
+  buttonTwitter.href = 'https://twitter.com/intent/tweet?url=' + twitterURL + '&text=Acabo%20de%20crear%20mi%20tarjeta%20con%20Font%20Awesome%20de%20Tarjetas-Martirio&hashtags=WomenInTech';
 }
 
 buttonTwitter.addEventListener('click', shareOnTwitter);
