@@ -1,4 +1,4 @@
-Proyecto grupal - Sprint 3 - Tarjetas Martirio
+Proyecto grupal - Sprint 2 - Tarjetas Martirio
 ------
 Descripción del proyecto
 -------
