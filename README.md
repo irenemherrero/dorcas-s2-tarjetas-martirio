@@ -1,5 +1,8 @@
 Proyecto grupal - Sprint 2 - Tarjetas Martirio
 ------
+
+Ejercicio realizado en el Sprint 2 del curso de Programación Front-End de Adalab por un grupo de 4 alumnas en el que se demustran los conocimientos adquiridos durante dicho periodo.
+
 Descripción del proyecto
 -------
 Realizar una aplicación web que permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información.
